@@ -41,7 +41,7 @@ To build and open the app:
 ./script/build_and_run.sh --verify --foreground
 ```
 
-The build script disables code signing for local development. App Store distribution, Developer ID signing, and notarization are not configured.
+The build script disables code signing for local development. Version tags trigger Developer ID signing, notarization, and GitHub preview releases. See [Tag releases](docs/RELEASING.md) for setup, version rules, and recovery. App Store distribution is not configured.
 
 ## Verify
 

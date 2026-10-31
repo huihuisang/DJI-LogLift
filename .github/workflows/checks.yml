@@ -1,0 +1,45 @@
+name: Checks
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: macos-26
+    timeout-minutes: 30
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.6.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+      - name: Install verification tools
+        run: |
+          brew install xcodegen ffmpeg
+          python3 -m pip install Pillow==12.3.0
+          echo "LOGBATCH_DERIVED_DATA=$RUNNER_TEMP/loglift-derived-data" >> "$GITHUB_ENV"
+          echo "TASK_ARTIFACT_DIR=$RUNNER_TEMP/loglift-checks" >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/loglift-checks"
+          xcodebuild -version
+      - name: Build and verify
+        run: |
+          ./script/verify.sh
+          git diff --exit-code
+          test -z "$(git ls-files --others --exclude-standard)"
+      - name: Preserve verification evidence
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: checks-${{ github.sha }}
+          path: ${{ runner.temp }}/loglift-checks
+          retention-days: 7
+          if-no-files-found: ignore
