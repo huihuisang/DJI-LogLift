@@ -1,0 +1,3419 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-30",
+  "indexURL": "https://www.dji.com/lut",
+  "downloadIndexURL": "https://www.dji.com/cn/downloads/softwares/osmo-nano-d-log-m-to-rec-709-vivid-lut",
+  "redistributionPermission": "unverified",
+  "packages": [
+    {
+      "id": "mavic-4-pro-dlog-m-to-rec709-lut",
+      "name": "DJI Mavic 4 Pro D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/mavic-4-pro-dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "mavic-4-pro",
+          "title": "DJI Mavic 4 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Mavic 4 Pro D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mavic-4-pro-dlog-m-to-rec709-lut.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "luts": [
+        {
+          "id": "mavic-4-pro-dlog-m-to-rec709-lut",
+          "packageID": "mavic-4-pro-dlog-m-to-rec709-lut",
+          "file": "LUTs/mavic-4-pro-dlog-m-to-rec709-lut.cube",
+          "originalName": "DJI Mavic 4 Pro D-Log M to Rec.709 V1.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "mavic-4-pro-dlog-to-rec709-lut",
+      "name": "DJI Mavic 4 Pro D-Log to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/mavic-4-pro-dlog-to-rec709-lut",
+      "products": [
+        {
+          "slug": "mavic-4-pro",
+          "title": "DJI Mavic 4 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Mavic 4 Pro D-Log to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mavic-4-pro-dlog-to-rec709-lut.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "luts": [
+        {
+          "id": "mavic-4-pro-dlog-to-rec709-lut",
+          "packageID": "mavic-4-pro-dlog-to-rec709-lut",
+          "file": "LUTs/mavic-4-pro-dlog-to-rec709-lut.cube",
+          "originalName": "DJI Mavic 4 Pro D-Log to Rec.709 V1.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "mavic-4-pro-dlog-to-rec709-vivid-lut",
+      "name": "DJI Mavic 4 Pro D-Log to Rec.709 vivid LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/mavic-4-pro-dlog-to-rec709-vivid-lut",
+      "products": [
+        {
+          "slug": "mavic-4-pro",
+          "title": "DJI Mavic 4 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA341%20LUT/DJI%20Mavic%204%20Pro%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "originalFilename": "DJI Mavic 4 Pro D-Log to Rec.709 vivid V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mavic-4-pro-dlog-to-rec709-vivid-lut.cube",
+          "sha256": "4f6a8b09849b09af3faf8af0fd7646b5c68658bd9f27170480fd4074cb7fbfbe",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "luts": [
+        {
+          "id": "mavic-4-pro-dlog-to-rec709-vivid-lut",
+          "packageID": "mavic-4-pro-dlog-to-rec709-vivid-lut",
+          "file": "LUTs/mavic-4-pro-dlog-to-rec709-vivid-lut.cube",
+          "originalName": "DJI Mavic 4 Pro D-Log to Rec.709 vivid V1.cube",
+          "sha256": "4f6a8b09849b09af3faf8af0fd7646b5c68658bd9f27170480fd4074cb7fbfbe",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2025-05-13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-mavic-3-d-log-m-709-lut",
+      "name": "DJI Mavic 3 D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-mavic-3-d-log-m-709-lut",
+      "products": [
+        {
+          "slug": "mavic-3",
+          "title": "DJI Mavic 3"
+        },
+        {
+          "slug": "mavic-3-classic",
+          "title": "DJI Mavic 3 Classic"
+        },
+        {
+          "slug": "mavic-3-pro",
+          "title": "DJI Mavic 3 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/M3/DJI%20Mavic%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-04-25"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/M3/DJI%20Mavic%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/M3/DJI%20Mavic%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Mavic 3 D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-mavic-3-d-log-m-709-lut.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-04-25"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-mavic-3-d-log-m-709-lut",
+          "packageID": "dji-mavic-3-d-log-m-709-lut",
+          "file": "LUTs/dji-mavic-3-d-log-m-709-lut.cube",
+          "originalName": "DJI Mavic 3 D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-04-25"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "vivid-lut",
+      "name": "DJI Mavic 3 D-Log to Rec.709 vivid LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/vivid-lut",
+      "products": [
+        {
+          "slug": "mavic-3",
+          "title": "DJI Mavic 3"
+        },
+        {
+          "slug": "mavic-3-classic",
+          "title": "DJI Mavic 3 Classic"
+        },
+        {
+          "slug": "mavic-3-pro",
+          "title": "DJI Mavic 3 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/mavic%203/DJI%20Mavic%203%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2022-05-31"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/mavic%203/DJI%20Mavic%203%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/mavic%203/DJI%20Mavic%203%20D-Log%20to%20Rec.709%20vivid%20V1.cube",
+          "originalFilename": "DJI Mavic 3 D-Log to Rec.709 vivid V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/vivid-lut.cube",
+          "sha256": "5cd863a4776a6c2c6adea662d5ff1f06a032a6853506f1b1cd5b5bd910270a90",
+          "bytes": 1401630,
+          "version": "v1.0",
+          "releaseDate": "2022-05-31"
+        }
+      ],
+      "luts": [
+        {
+          "id": "vivid-lut",
+          "packageID": "vivid-lut",
+          "file": "LUTs/vivid-lut.cube",
+          "originalName": "DJI Mavic 3 D-Log to Rec.709 vivid V1.cube",
+          "sha256": "5cd863a4776a6c2c6adea662d5ff1f06a032a6853506f1b1cd5b5bd910270a90",
+          "bytes": 1401630,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2022-05-31"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-mavic-3",
+      "name": "DJI Mavic 3 D-Log to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-mavic-3",
+      "products": [
+        {
+          "slug": "mavic-3",
+          "title": "DJI Mavic 3"
+        },
+        {
+          "slug": "mavic-3-classic",
+          "title": "DJI Mavic 3 Classic"
+        },
+        {
+          "slug": "mavic-3-pro",
+          "title": "DJI Mavic 3 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/260 downloads/DJI Mavic 3 D-Log to Rec.709 V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2021-11-09"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/260 downloads/DJI Mavic 3 D-Log to Rec.709 V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/260%20downloads/DJI%20Mavic%203%20D-Log%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Mavic 3 D-Log to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/transcoding-mavic-3.cube",
+          "sha256": "5e21b78dc23af8287b14301ec2c3803e6707385681ad348f4754aae2fd4562ee",
+          "bytes": 1401690,
+          "version": "v1.0",
+          "releaseDate": "2021-11-09"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-mavic-3",
+          "packageID": "transcoding-mavic-3",
+          "file": "LUTs/transcoding-mavic-3.cube",
+          "originalName": "DJI Mavic 3 D-Log to Rec.709 V1.cube",
+          "sha256": "5e21b78dc23af8287b14301ec2c3803e6707385681ad348f4754aae2fd4562ee",
+          "bytes": 1401690,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2021-11-09"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "mini-5-pro-dlog-m-to-rec709-lut",
+      "name": "DJI Mini 5 Pro D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/mini-5-pro-dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "mini-5-pro",
+          "title": "DJI Mini 5 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA150%20LUT/DJI%20Mini%205%20Pro%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-09-17"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA150%20LUT/DJI%20Mini%205%20Pro%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA150%20LUT/DJI%20Mini%205%20Pro%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "originalFilename": "DJI Mini 5 Pro D-Log M to Rec.709 LUT.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mini-5-pro-dlog-m-to-rec709-lut.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2025-09-17"
+        }
+      ],
+      "luts": [
+        {
+          "id": "mini-5-pro-dlog-m-to-rec709-lut",
+          "packageID": "mini-5-pro-dlog-m-to-rec709-lut",
+          "file": "LUTs/mini-5-pro-dlog-m-to-rec709-lut.cube",
+          "originalName": "DJI Mini 5 Pro D-Log M to Rec.709 LUT.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-09-17"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "mini-4-pro-dlog-to-rec709",
+      "name": "DJI Mini 4 Pro DJI D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/mini-4-pro-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "mini-4-pro",
+          "title": "DJI Mini 4 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        },
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "originalFilename": "DJI Mini 4 Pro D-Log M to Rec.709 V1_.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mini-4-pro-dlog-to-rec709-download-1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        },
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/140%20lut/DJI%20Mini%204%20Pro%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "originalFilename": "DJI Mini 4 Pro D-Log M to Rec.709 V1._.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/mini-4-pro-dlog-to-rec709-download-2.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        }
+      ],
+      "luts": [
+        {
+          "id": "mini-4-pro-dlog-to-rec709-download-1",
+          "packageID": "mini-4-pro-dlog-to-rec709",
+          "file": "LUTs/mini-4-pro-dlog-to-rec709-download-1.cube",
+          "originalName": "DJI Mini 4 Pro D-Log M to Rec.709 V1_.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        },
+        {
+          "id": "mini-4-pro-dlog-to-rec709-download-2",
+          "packageID": "mini-4-pro-dlog-to-rec709",
+          "file": "LUTs/mini-4-pro-dlog-to-rec709-download-2.cube",
+          "originalName": "DJI Mini 4 Pro D-Log M to Rec.709 V1._.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-09-25"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "lito-x1-dlog-m-to-rec709-lut",
+      "name": "DJI Lito X1 D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/lito-x1-dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "lito-x1",
+          "title": "DJI Lito X1"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA151%20Lut/DJI%20Lito%20X1%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-04-23"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA151%20Lut/DJI%20Lito%20X1%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA151%20Lut/DJI%20Lito%20X1%20D-Log%20M%20to%20Rec.709%20LUT.cube",
+          "originalFilename": "DJI Lito X1 D-Log M to Rec.709 LUT.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/lito-x1-dlog-m-to-rec709-lut.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-04-23"
+        }
+      ],
+      "luts": [
+        {
+          "id": "lito-x1-dlog-m-to-rec709-lut",
+          "packageID": "lito-x1-dlog-m-to-rec709-lut",
+          "file": "LUTs/lito-x1-dlog-m-to-rec709-lut.cube",
+          "originalName": "DJI Lito X1 D-Log M to Rec.709 LUT.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-04-23"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "flip-dlog-to-rec709",
+      "name": "DJI Flip D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/flip-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "flip",
+          "title": "DJI Flip"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        },
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "originalFilename": "DJI Flip D-Log M to Rec.709 V1_.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/flip-dlog-to-rec709-download-1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        },
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/141%20LUT/DJI%20Flip%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "originalFilename": "DJI Flip D-Log M to Rec.709 V1._.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/flip-dlog-to-rec709-download-2.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        }
+      ],
+      "luts": [
+        {
+          "id": "flip-dlog-to-rec709-download-1",
+          "packageID": "flip-dlog-to-rec709",
+          "file": "LUTs/flip-dlog-to-rec709-download-1.cube",
+          "originalName": "DJI Flip D-Log M to Rec.709 V1_.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        },
+        {
+          "id": "flip-dlog-to-rec709-download-2",
+          "packageID": "flip-dlog-to-rec709",
+          "file": "LUTs/flip-dlog-to-rec709-download-2.cube",
+          "originalName": "DJI Flip D-Log M to Rec.709 V1._.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-01-14"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "o4-air-unit-dlog-to-rec709",
+      "name": "DJI O4 Air Unit 系列 D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/o4-air-unit-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "o4-air-unit",
+          "title": "DJI O4 Air Unit 系列"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        },
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "originalFilename": "DJI O4 Air Unit Series D-Log M to Rec.709 V1._.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/o4-air-unit-dlog-to-rec709-download-1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        },
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/ZA530%20LUT/DJI%20O4%20Air%20Unit%20Series%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "originalFilename": "DJI O4 Air Unit Series D-Log M to Rec.709 V1_.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/o4-air-unit-dlog-to-rec709-download-2.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        }
+      ],
+      "luts": [
+        {
+          "id": "o4-air-unit-dlog-to-rec709-download-1",
+          "packageID": "o4-air-unit-dlog-to-rec709",
+          "file": "LUTs/o4-air-unit-dlog-to-rec709-download-1.cube",
+          "originalName": "DJI O4 Air Unit Series D-Log M to Rec.709 V1._.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        },
+        {
+          "id": "o4-air-unit-dlog-to-rec709-download-2",
+          "packageID": "o4-air-unit-dlog-to-rec709",
+          "file": "LUTs/o4-air-unit-dlog-to-rec709-download-2.cube",
+          "originalName": "DJI O4 Air Unit Series D-Log M to Rec.709 V1_.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-01-09"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "avata-360-dlog-m-to-rec709-lut",
+      "name": "DJI Avata 360 D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/avata-360-dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "avata-360",
+          "title": "DJI Avata 360"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA530%20Lut/DJI%20Avata%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-03-26"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA530%20Lut/DJI%20Avata%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/WA530%20Lut/DJI%20Avata%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Avata 360 D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/avata-360-dlog-m-to-rec709-lut.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-03-26"
+        }
+      ],
+      "luts": [
+        {
+          "id": "avata-360-dlog-m-to-rec709-lut",
+          "packageID": "avata-360-dlog-m-to-rec709-lut",
+          "file": "LUTs/avata-360-dlog-m-to-rec709-lut.cube",
+          "originalName": "DJI Avata 360 D-Log M to Rec.709 V1.cube",
+          "sha256": "f00d2f8621d8fe3edcfc77a4d4969a8361aaf0a5804196df7d37dcaa2e925fed",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-03-26"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "avata-2-dlog-to-rec709",
+      "name": "DJI Avata 2 DJI D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/avata-2-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "avata-2",
+          "title": "DJI Avata 2"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/avata2%20d-log/DJI%20Avata%202%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2024-04-11"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/avata2%20d-log/DJI%20Avata%202%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/avata2%20d-log/DJI%20Avata%202%20D-Log%20M%20to%20Rec.709%20V1._.cube",
+          "originalFilename": "DJI Avata 2 D-Log M to Rec.709 V1._.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/avata-2-dlog-to-rec709.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2024-04-11"
+        }
+      ],
+      "luts": [
+        {
+          "id": "avata-2-dlog-to-rec709",
+          "packageID": "avata-2-dlog-to-rec709",
+          "file": "LUTs/avata-2-dlog-to-rec709.cube",
+          "originalName": "DJI Avata 2 D-Log M to Rec.709 V1._.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2024-04-11"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "air-3s-dlog-to-rec709",
+      "name": "DJI Air 3s DJI D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/air-3s-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "air-3s",
+          "title": "DJI Air 3S"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/234_lut/DJI%20Air%203S%20%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/234_lut/DJI%20Air%203S%20%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/234_lut/DJI%20Air%203S%20%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "originalFilename": "DJI Air 3S  D-Log M to Rec.709 V1_.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/air-3s-dlog-to-rec709.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "luts": [
+        {
+          "id": "air-3s-dlog-to-rec709",
+          "packageID": "air-3s-dlog-to-rec709",
+          "file": "LUTs/air-3s-dlog-to-rec709.cube",
+          "originalName": "DJI Air 3S  D-Log M to Rec.709 V1_.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "air-3-dlog-to-rec709",
+      "name": "DJI Air 3 DJI D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/air-3-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "air-3",
+          "title": "DJI Air 3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/DJI%20Air%203%20Lut/DJI%20Air%203%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/DJI%20Air%203%20Lut/DJI%20Air%203%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/DJI%20Air%203%20Lut/DJI%20Air%203%20D-Log%20M%20to%20Rec.709%20V1_.cube",
+          "originalFilename": "DJI Air 3 D-Log M to Rec.709 V1_.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/air-3-dlog-to-rec709.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "luts": [
+        {
+          "id": "air-3-dlog-to-rec709",
+          "packageID": "air-3-dlog-to-rec709",
+          "file": "LUTs/air-3-dlog-to-rec709.cube",
+          "originalName": "DJI Air 3 D-Log M to Rec.709 V1_.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-08-03"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-360-dlog-m-to-rec709-lut",
+      "name": "DJI Osmo 360 D-Log M to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-360-dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "360",
+          "title": "Osmo 360"
+        },
+        {
+          "slug": "360-2",
+          "title": "Osmo 360 II"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OQ101%20LUT/DJI%20Osmo%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2025-07-31"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OQ101%20LUT/DJI%20Osmo%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OQ101%20LUT/DJI%20Osmo%20360%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI Osmo 360 D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-360-dlog-m-to-rec709-lut.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2025-07-31"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-360-dlog-m-to-rec709-lut",
+          "packageID": "osmo-360-dlog-m-to-rec709-lut",
+          "file": "LUTs/osmo-360-dlog-m-to-rec709-lut.cube",
+          "originalName": "DJI Osmo 360 D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2025-07-31"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-nano-d-log-m-to-rec-709-vivid-lut",
+      "name": "DJI Osmo Nano D-Log M to Rec.709 vivid LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-nano-d-log-m-to-rec-709-vivid-lut",
+      "products": [
+        {
+          "slug": "nano",
+          "title": "Osmo Nano"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OW001%20LUT/DJI%20OSMO%20Osmo%20Nano%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "V1.0",
+          "releaseDate": "2025-09-23"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OW001%20LUT/DJI%20OSMO%20Osmo%20Nano%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/OW001%20LUT/DJI%20OSMO%20Osmo%20Nano%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI OSMO Osmo Nano D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-nano-d-log-m-to-rec-709-vivid-lut.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "V1.0",
+          "releaseDate": "2025-09-23"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-nano-d-log-m-to-rec-709-vivid-lut",
+          "packageID": "osmo-nano-d-log-m-to-rec-709-vivid-lut",
+          "file": "LUTs/osmo-nano-d-log-m-to-rec-709-vivid-lut.cube",
+          "originalName": "DJI OSMO Osmo Nano D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "V1.0",
+          "releaseDate": "2025-09-23"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-action-6-d-log-m-to-rec-709-lut",
+      "name": "DJI OSMO Action 6 D-LogM to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-action-6-d-log-m-to-rec-709-lut",
+      "products": [
+        {
+          "slug": "osmo-action-6",
+          "title": "Osmo Action 6"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC206%20LUT/DJI%20OSMO%20Action%206%20D-LogM%20to%20Rec.709%20LUT-11.17.cube",
+          "category": ".cube",
+          "version": "V1.0",
+          "releaseDate": "2025-11-13"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC206%20LUT/DJI%20OSMO%20Action%206%20D-LogM%20to%20Rec.709%20LUT-11.17.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC206%20LUT/DJI%20OSMO%20Action%206%20D-LogM%20to%20Rec.709%20LUT-11.17.cube",
+          "originalFilename": "DJI OSMO Action 6 D-LogM to Rec.709 LUT-11.17.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-osmo-action-6-d-log-m-to-rec-709-lut.cube",
+          "sha256": "1972eb9b05699ba19d4aaa67aaa5fb00b46935c60ba9219183289f79e044cbb2",
+          "bytes": 753738,
+          "version": "V1.0",
+          "releaseDate": "2025-11-13"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-action-6-d-log-m-to-rec-709-lut",
+          "packageID": "dji-osmo-action-6-d-log-m-to-rec-709-lut",
+          "file": "LUTs/dji-osmo-action-6-d-log-m-to-rec-709-lut.cube",
+          "originalName": "DJI OSMO Action 6 D-LogM to Rec.709 LUT-11.17.cube",
+          "sha256": "1972eb9b05699ba19d4aaa67aaa5fb00b46935c60ba9219183289f79e044cbb2",
+          "bytes": 753738,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.0",
+          "releaseDate": "2025-11-13"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut",
+      "name": "DJI OSMO Action 5 Pro D-Log M to Rec.709 vivid LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut",
+      "products": [
+        {
+          "slug": "osmo-action-5-pro",
+          "title": "Osmo Action 5 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/DJI%20OSMO%20Action%205%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "V1.0",
+          "releaseDate": "2024-09-19"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/DJI%20OSMO%20Action%205%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/DJI%20OSMO%20Action%205%20Pro%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI OSMO Action 5 Pro D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "V1.0",
+          "releaseDate": "2024-09-19"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut",
+          "packageID": "dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut",
+          "file": "LUTs/dji-osmo-action-5-pro-d-log-m-to-rec-709-vivid-lut.cube",
+          "originalName": "DJI OSMO Action 5 Pro D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "V1.0",
+          "releaseDate": "2024-09-19"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+      "name": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+      "products": [
+        {
+          "slug": "osmo-action-5-pro",
+          "title": "Osmo Action 5 Pro"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%205%20Pro%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "category": "zip",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%205%20Pro%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%205%20Pro%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "originalFilename": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs.zip",
+          "path": "vendor/dji/archives/dji-osmo-action-5-pro-rec-709-to-color-grading-luts-1.zip",
+          "sha256": "db76e1d80ecf3a0d97a9f2e34671f32c51d4b2910341d14ae59a50a0fbd9349d",
+          "bytes": 5504597,
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts-01",
+          "packageID": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-5-pro-rec-709-to-color-grading-luts-01.cube",
+          "originalName": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs/DJI OSMO Action 5 Pro Mei.cube",
+          "sha256": "7b52bfd161a50d210578790dfdf3d5ff468313c2e30dca8d3ec52d4677e71ff2",
+          "bytes": 7340169,
+          "dimension": 64,
+          "shaperDimension": null,
+          "sampleCount": 262144,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "gb18030",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts-02",
+          "packageID": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-5-pro-rec-709-to-color-grading-luts-02.cube",
+          "originalName": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs/DJI OSMO Action 5 Pro Ju.cube",
+          "sha256": "225f8f130e82904c97754afc8b4e6e753f9977002f4fe2f5748374145f00fc90",
+          "bytes": 7130065,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts-03",
+          "packageID": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-5-pro-rec-709-to-color-grading-luts-03.cube",
+          "originalName": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs/DJI OSMO Action 5 Pro Zhu.cube",
+          "sha256": "1e9d91db323cfa63189848d1496f1005db6acbf2eebd247d3fa9c527dcdbf179",
+          "bytes": 7340169,
+          "dimension": 64,
+          "shaperDimension": null,
+          "sampleCount": 262144,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts-04",
+          "packageID": "dji-osmo-action-5-pro-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-5-pro-rec-709-to-color-grading-luts-04.cube",
+          "originalName": "DJI OSMO Action 5 Pro Rec.709 to Color Grading LUTs/DJI OSMO Action 5 Pro Lan.cube",
+          "sha256": "c05a85cb5bf9e14869e942fb468372c1fc5f6f472b561eb3620d1eac0d077b93",
+          "bytes": 7340166,
+          "dimension": 64,
+          "shaperDimension": null,
+          "sampleCount": 262144,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut",
+      "name": "DJI OSMO Action 4 D-Log M to Rec.709 vivid LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut",
+      "products": [
+        {
+          "slug": "osmo-action-4",
+          "title": "Osmo Action 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/203/DJI%20OSMO%20Action%204%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "V1.0",
+          "releaseDate": "2023-08-02"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/203/DJI%20OSMO%20Action%204%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/203/DJI%20OSMO%20Action%204%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI OSMO Action 4 D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "V1.0",
+          "releaseDate": "2023-08-02"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut",
+          "packageID": "dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut",
+          "file": "LUTs/dji-osmo-action-4-d-log-m-to-rec-709-vivid-lut.cube",
+          "originalName": "DJI OSMO Action 4 D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "V1.0",
+          "releaseDate": "2023-08-02"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-action-4-rec-709-to-color-grading-luts",
+      "name": "DJI OSMO Action 4 Rec.709 to Color Grading LUTs",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-action-4-rec-709-to-color-grading-luts",
+      "products": [
+        {
+          "slug": "osmo-action-4",
+          "title": "Osmo Action 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%204%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "category": "zip",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%204%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Action%204%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "originalFilename": "DJI OSMO Action 4 Rec.709 to Color Grading LUTs.zip",
+          "path": "vendor/dji/archives/dji-osmo-action-4-rec-709-to-color-grading-luts-1.zip",
+          "sha256": "75dbe8c4548cf4f09a4436dcd6f5d8f8888f60a2f880fb7dec6d8ed02014f2f9",
+          "bytes": 8022144,
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-action-4-rec-709-to-color-grading-luts-01",
+          "packageID": "dji-osmo-action-4-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-4-rec-709-to-color-grading-luts-01.cube",
+          "originalName": "DJI OSMO Action 4 Rec.709 to Color Grading LUTs/DJI OSMO Action 4 Ice Pro.cube",
+          "sha256": "1f3460ec7fcd9fce397f3289b9c5f3f133532a04db132a9c224f7919ca2f1f41",
+          "bytes": 6923880,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-action-4-rec-709-to-color-grading-luts-02",
+          "packageID": "dji-osmo-action-4-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-4-rec-709-to-color-grading-luts-02.cube",
+          "originalName": "DJI OSMO Action 4 Rec.709 to Color Grading LUTs/DJI OSMO Action 4 Nature Pro.cube",
+          "sha256": "4140fb49ba2e9accf64f6cc02f9b32b3410d64fa9edf8727a532a8af6fa9aaae",
+          "bytes": 6795398,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-action-4-rec-709-to-color-grading-luts-03",
+          "packageID": "dji-osmo-action-4-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-action-4-rec-709-to-color-grading-luts-03.cube",
+          "originalName": "DJI OSMO Action 4 Rec.709 to Color Grading LUTs/DJI OSMO Action 4 Forest Pro.cube",
+          "sha256": "31c0b9bc886f665e7ba96e1e088ec888ee353911cbcdccc81794dd1d964a8f1e",
+          "bytes": 7021661,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "V1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-to-rec709-lut-size33-2",
+      "name": "DJI OSMO Pocket 4P D-Log to Rec.709 V2.0 size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-to-rec709-lut-size33-2",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V2.0%20size33.cube",
+          "category": ".cube",
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V2.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V2.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log to Rec.709 V2.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-to-rec709-lut-size33-2.cube",
+          "sha256": "04757dd8dd669d60a2d58ea1834f185616ca9952922c168fe69dba29bb2be1b1",
+          "bytes": 1401638,
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-to-rec709-lut-size33-2",
+          "packageID": "osmo-pocket-4p-dlog-to-rec709-lut-size33-2",
+          "file": "LUTs/osmo-pocket-4p-dlog-to-rec709-lut-size33-2.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log to Rec.709 V2.0 size33.cube",
+          "sha256": "04757dd8dd669d60a2d58ea1834f185616ca9952922c168fe69dba29bb2be1b1",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-to-rec709-lut-size33",
+      "name": "DJI OSMO Pocket 4P D-Log to Rec.709 size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-to-rec709-lut-size33",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V1.0%20size33.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V1.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20V1.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log to Rec.709 V1.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-to-rec709-lut-size33.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-to-rec709-lut-size33",
+          "packageID": "osmo-pocket-4p-dlog-to-rec709-lut-size33",
+          "file": "LUTs/osmo-pocket-4p-dlog-to-rec709-lut-size33.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log to Rec.709 V1.0 size33.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2",
+      "name": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid V2.0 size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V2.0%20size33.cube",
+          "category": ".cube",
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V2.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V2.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid V2.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2.cube",
+          "sha256": "95afff501afd0343c3c1a5f1cf7bc34c8d5ed5765474444b58e9db8a8b7e58fb",
+          "bytes": 1401638,
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2",
+          "packageID": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2",
+          "file": "LUTs/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33-2.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid V2.0 size33.cube",
+          "sha256": "95afff501afd0343c3c1a5f1cf7bc34c8d5ed5765474444b58e9db8a8b7e58fb",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v2.0",
+          "releaseDate": "2026-08-17"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33",
+      "name": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid V1.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33.cube",
+          "sha256": "31344b50751590e267835a2843b2a5ca9f6120392707ba8242269c681922575a",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33",
+          "packageID": "osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33",
+          "file": "LUTs/osmo-pocket-4p-dlog-to-rec709-lut-vivid-size33.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log to Rec.709 vivid V1.0 size33.cube",
+          "sha256": "31344b50751590e267835a2843b2a5ca9f6120392707ba8242269c681922575a",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-size33",
+      "name": "DJI OSMO Pocket 4P D-Log2 to Rec.709 size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-2-to-rec709-lut-size33",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size33.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log2 to Rec.709 V1.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-size33.cube",
+          "sha256": "ca19fb2da9ddb82261a6baa86a511ce22bb46a1d6ca5bf50ca4c4dbbd71eb1a1",
+          "bytes": 858398,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-size33",
+          "packageID": "osmo-pocket-4p-dlog-2-to-rec709-lut-size33",
+          "file": "LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-size33.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log2 to Rec.709 V1.0 size33.cube",
+          "sha256": "ca19fb2da9ddb82261a6baa86a511ce22bb46a1d6ca5bf50ca4c4dbbd71eb1a1",
+          "bytes": 858398,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog2",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-size65",
+      "name": "DJI OSMO Pocket 4P D-Log2 to Rec.709 size65",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-2-to-rec709-lut-size65",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size65.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size65.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20V1.0%20size65.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log2 to Rec.709 V1.0 size65.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-size65.cube",
+          "sha256": "fa6537da3235c281da6e361806d3e9ee93f5532ad95471878c5d6c05157caa9c",
+          "bytes": 6566125,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-size65",
+          "packageID": "osmo-pocket-4p-dlog-2-to-rec709-lut-size65",
+          "file": "LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-size65.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log2 to Rec.709 V1.0 size65.cube",
+          "sha256": "fa6537da3235c281da6e361806d3e9ee93f5532ad95471878c5d6c05157caa9c",
+          "bytes": 6566125,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog2",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33",
+      "name": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid size33",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size33.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid V1.0 size33.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33.cube",
+          "sha256": "7d66f59d8020439795482fdfe2dba697d5ee272c3d63b802e3858015bdda830c",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33",
+          "packageID": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33",
+          "file": "LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size33.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid V1.0 size33.cube",
+          "sha256": "7d66f59d8020439795482fdfe2dba697d5ee272c3d63b802e3858015bdda830c",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog2",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65",
+      "name": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid size65",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65",
+      "products": [
+        {
+          "slug": "osmo-pocket-4p",
+          "title": "Osmo Pocket 4P"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size65.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size65.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG224%20LUT/DJI%20OSMO%20Pocket%204P%20D-Log2%20to%20Rec.709%20vivid%20V1.0%20size65.cube",
+          "originalFilename": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid V1.0 size65.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65.cube",
+          "sha256": "32b9b49d52fde38f95cbc1d0a4f486fcbf176eb82d28481b25d4f9a0b006734e",
+          "bytes": 10710470,
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65",
+          "packageID": "osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65",
+          "file": "LUTs/osmo-pocket-4p-dlog-2-to-rec709-lut-vivid-size65.cube",
+          "originalName": "DJI OSMO Pocket 4P D-Log2 to Rec.709 vivid V1.0 size65.cube",
+          "sha256": "32b9b49d52fde38f95cbc1d0a4f486fcbf176eb82d28481b25d4f9a0b006734e",
+          "bytes": 10710470,
+          "dimension": 65,
+          "shaperDimension": null,
+          "sampleCount": 274625,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog2",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2026-06-15"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4-dlog-to-rec709-lut-vivid-2",
+      "name": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid V2.0",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4-dlog-to-rec709-lut-vivid-2",
+      "products": [
+        {
+          "slug": "osmo-pocket-4",
+          "title": "Osmo Pocket 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V2.0.cube",
+          "category": ".cube",
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V2.0.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V2.0.cube",
+          "originalFilename": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid V2.0.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4-dlog-to-rec709-lut-vivid-2.cube",
+          "sha256": "95afff501afd0343c3c1a5f1cf7bc34c8d5ed5765474444b58e9db8a8b7e58fb",
+          "bytes": 1401638,
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4-dlog-to-rec709-lut-vivid-2",
+          "packageID": "osmo-pocket-4-dlog-to-rec709-lut-vivid-2",
+          "file": "LUTs/osmo-pocket-4-dlog-to-rec709-lut-vivid-2.cube",
+          "originalName": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid V2.0.cube",
+          "sha256": "95afff501afd0343c3c1a5f1cf7bc34c8d5ed5765474444b58e9db8a8b7e58fb",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4-dlog-to-rec709-lut-vivid",
+      "name": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4-dlog-to-rec709-lut-vivid",
+      "products": [
+        {
+          "slug": "osmo-pocket-4",
+          "title": "Osmo Pocket 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V1.0.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V1.0.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20vivid%20V1.0.cube",
+          "originalFilename": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid V1.0.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4-dlog-to-rec709-lut-vivid.cube",
+          "sha256": "bb3c9b282c21e2974e67d73c9b62ef6c3bc9092d63b713c44ecc4e0de3eccfad",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4-dlog-to-rec709-lut-vivid",
+          "packageID": "osmo-pocket-4-dlog-to-rec709-lut-vivid",
+          "file": "LUTs/osmo-pocket-4-dlog-to-rec709-lut-vivid.cube",
+          "originalName": "DJI OSMO Pocket 4 D-Log to Rec.709 vivid V1.0.cube",
+          "sha256": "bb3c9b282c21e2974e67d73c9b62ef6c3bc9092d63b713c44ecc4e0de3eccfad",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "vivid",
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4-dlog-to-rec709-lut-2",
+      "name": "DJI OSMO Pocket 4 D-Log to Rec.709 V2.0",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4-dlog-to-rec709-lut-2",
+      "products": [
+        {
+          "slug": "osmo-pocket-4",
+          "title": "Osmo Pocket 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V2.0.cube",
+          "category": ".cube",
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V2.0.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V2.0.cube",
+          "originalFilename": "DJI OSMO Pocket 4 D-Log to Rec.709 V2.0.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4-dlog-to-rec709-lut-2.cube",
+          "sha256": "d029a958519a41f3fb98ce9ad11cc1f3fe9c7c8c48a91955136363bcc19847b9",
+          "bytes": 1401638,
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4-dlog-to-rec709-lut-2",
+          "packageID": "osmo-pocket-4-dlog-to-rec709-lut-2",
+          "file": "LUTs/osmo-pocket-4-dlog-to-rec709-lut-2.cube",
+          "originalName": "DJI OSMO Pocket 4 D-Log to Rec.709 V2.0.cube",
+          "sha256": "d029a958519a41f3fb98ce9ad11cc1f3fe9c7c8c48a91955136363bcc19847b9",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v2.0",
+          "releaseDate": "2026-09-24"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-4-dlog-to-rec709-lut",
+      "name": "DJI OSMO Pocket 4 D-Log to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-4-dlog-to-rec709-lut",
+      "products": [
+        {
+          "slug": "osmo-pocket-4",
+          "title": "Osmo Pocket 4"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V1.0.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V1.0.cube",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/HG214%20Lut/DJI%20OSMO%20Pocket%204%20D-Log%20to%20Rec.709%20V1.0.cube",
+          "originalFilename": "DJI OSMO Pocket 4 D-Log to Rec.709 V1.0.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-4-dlog-to-rec709-lut.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-4-dlog-to-rec709-lut",
+          "packageID": "osmo-pocket-4-dlog-to-rec709-lut",
+          "file": "LUTs/osmo-pocket-4-dlog-to-rec709-lut.cube",
+          "originalName": "DJI OSMO Pocket 4 D-Log to Rec.709 V1.0.cube",
+          "sha256": "ca8bc7d3bf382512ed9501137c8b88d1829ae9b22a84965d7d2e1339f615de72",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2026-04-16"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "osmo-pocket-3-dlog-to-rec709",
+      "name": "DJI OSMO Pocket 3 D-Log M to Rec.709",
+      "sourcePage": "https://www.dji.com/downloads/softwares/osmo-pocket-3-dlog-to-rec709",
+      "products": [
+        {
+          "slug": "osmo-pocket-3",
+          "title": "Osmo Pocket 3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://www-dl.djicdn.com/5e45168b46b342d5b88f72c458ba6e79/OP3%20LUT%E6%96%87%E4%BB%B6%E7%89%B9%E6%AE%8A%E5%A4%84%E7%90%86/DJI%20OSMO%20Pocket%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2023-10-25"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://www-dl.djicdn.com/5e45168b46b342d5b88f72c458ba6e79/OP3%20LUT%E6%96%87%E4%BB%B6%E7%89%B9%E6%AE%8A%E5%A4%84%E7%90%86/DJI%20OSMO%20Pocket%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "resolvedURL": "https://www-dl.djicdn.com/5e45168b46b342d5b88f72c458ba6e79/OP3%20LUT%E6%96%87%E4%BB%B6%E7%89%B9%E6%AE%8A%E5%A4%84%E7%90%86/DJI%20OSMO%20Pocket%203%20D-Log%20M%20to%20Rec.709%20V1.cube",
+          "originalFilename": "DJI OSMO Pocket 3 D-Log M to Rec.709 V1.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/osmo-pocket-3-dlog-to-rec709.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "version": "v1.0",
+          "releaseDate": "2023-10-25"
+        }
+      ],
+      "luts": [
+        {
+          "id": "osmo-pocket-3-dlog-to-rec709",
+          "packageID": "osmo-pocket-3-dlog-to-rec709",
+          "file": "LUTs/osmo-pocket-3-dlog-to-rec709.cube",
+          "originalName": "DJI OSMO Pocket 3 D-Log M to Rec.709 V1.cube",
+          "sha256": "b18162854ab47702068410c33afa98a8cb6eef159fc5a04ce0e65fad0fd8947e",
+          "bytes": 1042315,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2023-10-25"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+      "name": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+      "products": [
+        {
+          "slug": "osmo-pocket-3",
+          "title": "Osmo Pocket 3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Pocket%203%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "category": "zip",
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Pocket%203%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "resolvedURL": "https://terra-1-g.djicdn.com/851d20f7b9f64838a34cd02351370894/AC204%E8%BD%AF%E4%BB%B6/%E5%A4%A7%E5%B8%88%E6%BB%A4%E9%95%9C/DJI%20OSMO%20Pocket%203%20Rec.709%20to%20Color%20Grading%20LUTs.zip",
+          "originalFilename": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs.zip",
+          "path": "vendor/dji/archives/dji-osmo-pocket-3-rec-709-to-color-grading-luts-1.zip",
+          "sha256": "8ff5e3d8621a5dad95539c2c138ac8337f57f52e8a94bc0467d3f2dcaf602ec4",
+          "bytes": 1226295,
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-osmo-pocket-3-rec-709-to-color-grading-luts-01",
+          "packageID": "dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-pocket-3-rec-709-to-color-grading-luts-01.cube",
+          "originalName": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs/DJI OSMO Pocket 3 Spring Pro.cube",
+          "sha256": "e09d7c59e62104cf1240963c3afbb7f886e2531d2df685e8f03fe01d39fc044a",
+          "bytes": 688232,
+          "dimension": 32,
+          "shaperDimension": null,
+          "sampleCount": 32768,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "gb18030",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-pocket-3-rec-709-to-color-grading-luts-02",
+          "packageID": "dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-pocket-3-rec-709-to-color-grading-luts-02.cube",
+          "originalName": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs/DJI OSMO Pocket 3 Summer Pro.cube",
+          "sha256": "5e478e5a6630434b1818f3fb91d66a24f815f7ca3103fa1602bf80184132c73d",
+          "bytes": 103239,
+          "dimension": 17,
+          "shaperDimension": null,
+          "sampleCount": 4913,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-pocket-3-rec-709-to-color-grading-luts-03",
+          "packageID": "dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-pocket-3-rec-709-to-color-grading-luts-03.cube",
+          "originalName": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs/DJI OSMO Pocket 3 Autumn Pro.cube",
+          "sha256": "8ccb5068a5a8cacefaec7372e5a0d9d9caf66447ee8fab6b29d8f26b5071fce7",
+          "bytes": 115043,
+          "dimension": 16,
+          "shaperDimension": null,
+          "sampleCount": 4096,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        },
+        {
+          "id": "dji-osmo-pocket-3-rec-709-to-color-grading-luts-04",
+          "packageID": "dji-osmo-pocket-3-rec-709-to-color-grading-luts",
+          "file": "LUTs/dji-osmo-pocket-3-rec-709-to-color-grading-luts-04.cube",
+          "originalName": "DJI OSMO Pocket 3 Rec.709 to Color Grading LUTs/DJI OSMO Pocket 3 Winter Pro.cube",
+          "sha256": "ad3a79ed2e6dfbd03c8cfb76aebbeeec026fd55470ead9e94cf09c6da4e0efb3",
+          "bytes": 7340170,
+          "dimension": 64,
+          "shaperDimension": null,
+          "sampleCount": 262144,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "gb18030",
+          "kind": "creative",
+          "inputProfile": "rec709",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.1",
+          "releaseDate": "2024-11-06"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-zenmuse-x9-dlog2rec2020hlg-lut",
+      "name": "禅思 X9 D-Log to Rec.2020 HLG LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-zenmuse-x9-dlog2rec2020hlg-lut",
+      "products": [
+        {
+          "slug": "ronin-4d",
+          "title": "DJI Ronin 4D"
+        },
+        {
+          "slug": "inspire-3",
+          "title": "DJI Inspire 3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://mydjiflight.dji.com/file/links/DJI_ZENMUSE_X9_DLOG_TO_REC2020HLG_3D_LUT_V1",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2021-12-28"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://mydjiflight.dji.com/file/links/DJI_ZENMUSE_X9_DLOG_TO_REC2020HLG_3D_LUT_V1",
+          "resolvedURL": "https://terra-2-g-a.djicdn.com/1546577435024199aad91154298e6ca7/dhyo25459ixvtshzuqw0gwba/DJI_ZENMUSE_X9_DLog_To_Rec2020HLG.cube",
+          "originalFilename": "DJI_ZENMUSE_X9_DLog_To_Rec2020HLG.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-zenmuse-x9-dlog2rec2020hlg-lut.cube",
+          "sha256": "c5d105941334d87e5474fbedc42dc25c2aa73559c37d7ba470a7aa279544eb4f",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2021-12-28",
+          "sanitizedURLFields": [
+            "resolvedURL"
+          ]
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-zenmuse-x9-dlog2rec2020hlg-lut",
+          "packageID": "dji-zenmuse-x9-dlog2rec2020hlg-lut",
+          "file": "LUTs/dji-zenmuse-x9-dlog2rec2020hlg-lut.cube",
+          "originalName": "DJI_ZENMUSE_X9_DLog_To_Rec2020HLG.cube",
+          "sha256": "c5d105941334d87e5474fbedc42dc25c2aa73559c37d7ba470a7aa279544eb4f",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec2020HLG",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2021-12-28"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dji-zenmuse-x9-dlog2rec709-lut",
+      "name": "禅思 X9 D-Log to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dji-zenmuse-x9-dlog2rec709-lut",
+      "products": [
+        {
+          "slug": "ronin-4d",
+          "title": "DJI Ronin 4D"
+        },
+        {
+          "slug": "inspire-3",
+          "title": "DJI Inspire 3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://mydjiflight.dji.com/file/links/DJI_ZENMUSE_X9_DLOG_TO_REC709_3D_LUT_V1",
+          "category": ".cube",
+          "version": "v1.0",
+          "releaseDate": "2021-12-28"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://mydjiflight.dji.com/file/links/DJI_ZENMUSE_X9_DLOG_TO_REC709_3D_LUT_V1",
+          "resolvedURL": "https://terra-2-g-a.djicdn.com/1546577435024199aad91154298e6ca7/8e3qn652prgi6g6utn9to7e5/DJI_ZENMUSE_X9_DLog_To_Rec709.cube",
+          "originalFilename": "DJI_ZENMUSE_X9_DLog_To_Rec709.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dji-zenmuse-x9-dlog2rec709-lut.cube",
+          "sha256": "583a08a77c920156f84770a69d4124f586196a9f0f76b2d02f23a1a05a863d06",
+          "bytes": 1401638,
+          "version": "v1.0",
+          "releaseDate": "2021-12-28",
+          "sanitizedURLFields": [
+            "resolvedURL"
+          ]
+        }
+      ],
+      "luts": [
+        {
+          "id": "dji-zenmuse-x9-dlog2rec709-lut",
+          "packageID": "dji-zenmuse-x9-dlog2rec709-lut",
+          "file": "LUTs/dji-zenmuse-x9-dlog2rec709-lut.cube",
+          "originalName": "DJI_ZENMUSE_X9_DLog_To_Rec709.cube",
+          "sha256": "583a08a77c920156f84770a69d4124f586196a9f0f76b2d02f23a1a05a863d06",
+          "bytes": 1401638,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "v1.0",
+          "releaseDate": "2021-12-28"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-zenmuse-x5r",
+      "name": "Inspire 1/Zenmuse X5R Dlog to sRGB 3DLUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-zenmuse-x5r",
+      "products": [
+        {
+          "slug": "inspire-1",
+          "title": "悟 Inspire 1"
+        },
+        {
+          "slug": "inspire-1-pro-and-raw",
+          "title": "悟 Inspire 1 Pro/RAW"
+        },
+        {
+          "slug": "zenmuse-x5",
+          "title": "禅思 Zenmuse X5"
+        },
+        {
+          "slug": "zenmuse-x5r",
+          "title": "禅思 Zenmuse X5R"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://dl.djicdn.com/downloads/zenmuse_x5s/X5_series_Dlog_3DLUT.zip",
+          "category": "zip",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://dl.djicdn.com/downloads/zenmuse_x5s/X5_series_Dlog_3DLUT.zip",
+          "resolvedURL": "https://dl.djicdn.com/downloads/zenmuse_x5s/X5_series_Dlog_3DLUT.zip",
+          "originalFilename": "X5_series_Dlog_3DLUT.zip",
+          "path": "vendor/dji/archives/transcoding-zenmuse-x5r-1.zip",
+          "sha256": "69161b1c6b5d576460c1c84e291571d3cda9f60e0bec24997b54dd56ab1a8101",
+          "bytes": 606776,
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-zenmuse-x5r-01",
+          "packageID": "transcoding-zenmuse-x5r",
+          "file": "LUTs/transcoding-zenmuse-x5r-01.cube",
+          "originalName": "X5_series_Dlog_3DLUT/DJI_X5_DLOG2sRGB.cube",
+          "sha256": "52f580aa926c4409e0fc96e4616c41ec6b48430d6ba3031b78fa5770a9722e20",
+          "bytes": 671439,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-zenmuse-x5r-02",
+          "packageID": "transcoding-zenmuse-x5r",
+          "file": "LUTs/transcoding-zenmuse-x5r-02.cube",
+          "originalName": "X5_series_Dlog_3DLUT/DJI_X5_DLOG2sRGB_before20160401Firmware.cube",
+          "sha256": "ae161ebe8a7604ceb8888ee5544534def0bb1e84f7f9825af41192d87ea81bef",
+          "bytes": 656243,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-zenmuse-x5r-03",
+          "packageID": "transcoding-zenmuse-x5r",
+          "file": "LUTs/transcoding-zenmuse-x5r-03.cube",
+          "originalName": "X5_series_Dlog_3DLUT/DJI_X5_DLOG2sRGB_Improv.cube",
+          "sha256": "e9d1679b043aae4707fd2e37782cef5734ad23efb046a99d9c935d46e1c217fb",
+          "bytes": 520339,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-zenmuse-x5r-04",
+          "packageID": "transcoding-zenmuse-x5r",
+          "file": "LUTs/transcoding-zenmuse-x5r-04.cube",
+          "originalName": "X5_series_Dlog_3DLUT/gamma18TosRGB.cube",
+          "sha256": "bbd13277286fcf1b27084b7163cc9755357ae8b8b1400399b97eef1a91c2f903",
+          "bytes": 176235,
+          "dimension": null,
+          "shaperDimension": 4096,
+          "sampleCount": 4096,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "gamma18",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-zenmuse-x5r-05",
+          "packageID": "transcoding-zenmuse-x5r",
+          "file": "LUTs/transcoding-zenmuse-x5r-05.cube",
+          "originalName": "X5_series_Dlog_3DLUT/gamma22TosRGB.cube",
+          "sha256": "e6b2caccc82e0d40cfa18864c31cf6d382ec9a3c7db99e4fefc2d5620877f246",
+          "bytes": 163947,
+          "dimension": null,
+          "shaperDimension": 4096,
+          "sampleCount": 4096,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "gamma22",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-zenmuse-x7-linear",
+      "name": "Zenmuse Linear to D-Log LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-zenmuse-x7-linear",
+      "products": [
+        {
+          "slug": "zenmuse-x5s",
+          "title": "禅思 Zenmuse X5S"
+        },
+        {
+          "slug": "zenmuse-x7",
+          "title": "禅思 Zenmuse X7"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://dl.djicdn.com/downloads/zenmuse+x7/20180104/Linear+to+D-Log.zip",
+          "category": "zip",
+          "version": "",
+          "releaseDate": "2018-01-04"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://dl.djicdn.com/downloads/zenmuse+x7/20180104/Linear+to+D-Log.zip",
+          "resolvedURL": "https://dl.djicdn.com/downloads/zenmuse+x7/20180104/Linear+to+D-Log.zip",
+          "originalFilename": "Linear+to+D-Log.zip",
+          "path": "vendor/dji/archives/transcoding-zenmuse-x7-linear-1.zip",
+          "sha256": "ffc0df94103db7d438e1804b053a9bf15ddc4c1cca04e990306cd14e4235d822",
+          "bytes": 29181,
+          "version": "",
+          "releaseDate": "2018-01-04"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-zenmuse-x7-linear",
+          "packageID": "transcoding-zenmuse-x7-linear",
+          "file": "LUTs/transcoding-zenmuse-x7-linear.cube",
+          "originalName": "Linear to D-Log.cube",
+          "sha256": "4be0a4b14b5af8e68afa76de8f0995a2bc52e2dc34599c42367e4a3267e68ab5",
+          "bytes": 159843,
+          "dimension": null,
+          "shaperDimension": 4096,
+          "sampleCount": 4096,
+          "domainMin": [
+            -0.015419,
+            -0.015419,
+            -0.015419
+          ],
+          "domainMax": [
+            42.005197,
+            42.005197,
+            42.005197
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "linear",
+          "outputProfile": "dlog",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2018-01-04"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-zenmuse-x7-rec",
+      "name": "Zenmuse D-Log to Rec.709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-zenmuse-x7-rec",
+      "products": [
+        {
+          "slug": "zenmuse-x5s",
+          "title": "禅思 Zenmuse X5S"
+        },
+        {
+          "slug": "zenmuse-x7",
+          "title": "禅思 Zenmuse X7"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://dl.djicdn.com/downloads/zenmuse+x7/20171017/D-Log+to+Rec709.zip",
+          "category": "zip",
+          "version": "",
+          "releaseDate": "2017-10-17"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://dl.djicdn.com/downloads/zenmuse+x7/20171017/D-Log+to+Rec709.zip",
+          "resolvedURL": "https://dl.djicdn.com/downloads/zenmuse+x7/20171017/D-Log+to+Rec709.zip",
+          "originalFilename": "D-Log+to+Rec709.zip",
+          "path": "vendor/dji/archives/transcoding-zenmuse-x7-rec-1.zip",
+          "sha256": "2c484740aa04fe4833f5c6cdb0f4974d9ad56f7a21e557c176a2523f8b169145",
+          "bytes": 363074,
+          "version": "",
+          "releaseDate": "2017-10-17"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-zenmuse-x7-rec",
+          "packageID": "transcoding-zenmuse-x7-rec",
+          "file": "LUTs/transcoding-zenmuse-x7-rec.cube",
+          "originalName": "D-Log to Rec709.cube",
+          "sha256": "0a576b299d8c7b9310a41fcbcac983bfaaf626e8bc3d4acc6cc15fb33972dab8",
+          "bytes": 1401640,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2017-10-17"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "dlog-m-to-rec709-lut",
+      "name": "DJl Mavic 2/Air 2s D-Log M to Rec709 LUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/dlog-m-to-rec709-lut",
+      "products": [
+        {
+          "slug": "mavic-2",
+          "title": "御 Mavic 2"
+        },
+        {
+          "slug": "air-2s",
+          "title": "DJI Air 2S"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://docs.djicdn.com/Products+info/DLog-M+to+Rec709.cube",
+          "category": ".cube",
+          "version": "",
+          "releaseDate": "2018-09-19"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://docs.djicdn.com/Products+info/DLog-M+to+Rec709.cube",
+          "resolvedURL": "https://docs.djicdn.com/Products+info/DLog-M+to+Rec709.cube",
+          "originalFilename": "DLog-M+to+Rec709.cube",
+          "path": "LogBatch/Resources/DJI/LUTs/dlog-m-to-rec709-lut.cube",
+          "sha256": "ac3e114ba6467d27f97295bf91532428bddc05fb61922635d9271d57ecbc9d48",
+          "bytes": 1401631,
+          "version": "",
+          "releaseDate": "2018-09-19"
+        }
+      ],
+      "luts": [
+        {
+          "id": "dlog-m-to-rec709-lut",
+          "packageID": "dlog-m-to-rec709-lut",
+          "file": "LUTs/dlog-m-to-rec709-lut.cube",
+          "originalName": "DLog-M+to+Rec709.cube",
+          "sha256": "ac3e114ba6467d27f97295bf91532428bddc05fb61922635d9271d57ecbc9d48",
+          "bytes": 1401631,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlogM",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2018-09-19"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-phantom-4",
+      "name": "Phantom 4 Dlog 3DLUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-phantom-4",
+      "products": [
+        {
+          "slug": "phantom-4",
+          "title": "精灵 Phantom 4"
+        },
+        {
+          "slug": "zenmuse-z3",
+          "title": "禅思 Zenmuse Z3"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://dl.djicdn.com/downloads/phantom_4/Phantom_4_Dlog_3DLUT_20160606.zip",
+          "category": "zip",
+          "version": "",
+          "releaseDate": "2016-06-06"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://dl.djicdn.com/downloads/phantom_4/Phantom_4_Dlog_3DLUT_20160606.zip",
+          "resolvedURL": "https://dl.djicdn.com/downloads/phantom_4/Phantom_4_Dlog_3DLUT_20160606.zip",
+          "originalFilename": "Phantom_4_Dlog_3DLUT_20160606.zip",
+          "path": "vendor/dji/archives/transcoding-phantom-4-1.zip",
+          "sha256": "7f6aa2ea85892267447dbd906b8b1cfa92a392079c7b5219f61f7ca90022a92b",
+          "bytes": 617029,
+          "version": "",
+          "releaseDate": "2016-06-06"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-phantom-4-01",
+          "packageID": "transcoding-phantom-4",
+          "file": "LUTs/transcoding-phantom-4-01.cube",
+          "originalName": "P4DeLOGCube/DJI_Phantom4_DLOG2Rec709.cube",
+          "sha256": "606a69301f1071b9db8e7fb365cc4d24bd3baacf1a7e6678d3961349cef43b01",
+          "bytes": 698939,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "rec709",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-06-06"
+        },
+        {
+          "id": "transcoding-phantom-4-02",
+          "packageID": "transcoding-phantom-4",
+          "file": "LUTs/transcoding-phantom-4-02.cube",
+          "originalName": "P4DeLOGCube/DJI_Phantom4_DLOG2sRGB.cube",
+          "sha256": "9dd3349e448061b40177f8428e24fcdeb6334e419912ae619df37f6a7e1d0598",
+          "bytes": 698245,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-06-06"
+        },
+        {
+          "id": "transcoding-phantom-4-03",
+          "packageID": "transcoding-phantom-4",
+          "file": "LUTs/transcoding-phantom-4-03.cube",
+          "originalName": "P4DeLOGCube/DJI_Phantom4_DLOG2sRGB_Improv.cube",
+          "sha256": "981cde1e56e47b2896462834c49169e8485643f7712ed89e0e17ee3efa290469",
+          "bytes": 709417,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-06-06"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "transcoding-phantom-3",
+      "name": "Phantom 3 Dlog to sRGB 3DLUT",
+      "sourcePage": "https://www.dji.com/downloads/softwares/transcoding-phantom-3",
+      "products": [
+        {
+          "slug": "phantom-3-pro",
+          "title": "精灵 Phantom 3 Pro"
+        },
+        {
+          "slug": "phantom-3-adv",
+          "title": "精灵 Phantom 3 Advanced"
+        }
+      ],
+      "downloads": [
+        {
+          "url": "https://dl.djicdn.com/downloads/phantom_3/Phantom_3_Dlog_3DLUT.zip",
+          "category": "zip",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "files": [
+        {
+          "requestedURL": "https://dl.djicdn.com/downloads/phantom_3/Phantom_3_Dlog_3DLUT.zip",
+          "resolvedURL": "https://dl.djicdn.com/downloads/phantom_3/Phantom_3_Dlog_3DLUT.zip",
+          "originalFilename": "Phantom_3_Dlog_3DLUT.zip",
+          "path": "vendor/dji/archives/transcoding-phantom-3-1.zip",
+          "sha256": "1bfeee29d93c6c789bcac3b302d5908195e870177b4883036779140cf0d58c59",
+          "bytes": 290597,
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "luts": [
+        {
+          "id": "transcoding-phantom-3-01",
+          "packageID": "transcoding-phantom-3",
+          "file": "LUTs/transcoding-phantom-3-01.cube",
+          "originalName": "Phantom_3_Dlog_3DLUT/DJI_Phantom3_DLOG2sRGB.cube",
+          "sha256": "4c90431f568e3e429779ca8d7dfd3672f71a0971a4a3e3ce1770c12e7a9107f6",
+          "bytes": 41067,
+          "dimension": null,
+          "shaperDimension": 1024,
+          "sampleCount": 1024,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-phantom-3-02",
+          "packageID": "transcoding-phantom-3",
+          "file": "LUTs/transcoding-phantom-3-02.cube",
+          "originalName": "Phantom_3_Dlog_3DLUT/DJI_Phantom3_DLOG2sRGB_Improv.cube",
+          "sha256": "104f201d0c0c60bb4ce10a1b8baf49e2895e09ce3d34565f52b1a336dc17cb2e",
+          "bytes": 856088,
+          "dimension": 33,
+          "shaperDimension": null,
+          "sampleCount": 35937,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "dlog",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-phantom-3-03",
+          "packageID": "transcoding-phantom-3",
+          "file": "LUTs/transcoding-phantom-3-03.cube",
+          "originalName": "Phantom_3_Dlog_3DLUT/gamma18TosRGB.cube",
+          "sha256": "bbd13277286fcf1b27084b7163cc9755357ae8b8b1400399b97eef1a91c2f903",
+          "bytes": 176235,
+          "dimension": null,
+          "shaperDimension": 4096,
+          "sampleCount": 4096,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "gamma18",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        },
+        {
+          "id": "transcoding-phantom-3-04",
+          "packageID": "transcoding-phantom-3",
+          "file": "LUTs/transcoding-phantom-3-04.cube",
+          "originalName": "Phantom_3_Dlog_3DLUT/gamma22TosRGB.cube",
+          "sha256": "e6b2caccc82e0d40cfa18864c31cf6d382ec9a3c7db99e4fefc2d5620877f246",
+          "bytes": 163947,
+          "dimension": null,
+          "shaperDimension": 4096,
+          "sampleCount": 4096,
+          "domainMin": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "domainMax": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "textEncoding": "utf-8",
+          "kind": "technical",
+          "inputProfile": "gamma22",
+          "outputProfile": "sRGB",
+          "style": "standard",
+          "version": "",
+          "releaseDate": "2016-05-12"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

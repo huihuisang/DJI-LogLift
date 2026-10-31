@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048108B9E65B21C749FE9E38 /* ProductArtworkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */; };
+		04D7962C1CC45781A96108C1 /* LUTInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */; };
+		050179CFC2C6C8F4F9D0DA05 /* ProductArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */; };
+		054BDD46F5EA09EE2C6A0627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */; };
+		0C687F9ED3D8BE124B3F9782 /* StudioPreviewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */; };
+		128D879FCA22E2A4F29C3D6B /* LogBatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136C0CD4AC831CB22890C87 /* LogBatchApp.swift */; };
+		1760C9BD3032C26B21130F3C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A61023F73360742490EC72A /* Localizable.xcstrings */; };
+		1C729759FA5501CEE51F6024 /* CameraArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */; };
+		1EECAC4ED34B4999B3434412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D80433856C19C173897DA2 /* Assets.xcassets */; };
+		20DEE362F296AAF06F4947DD /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE15BA97E5250657331F0A0 /* SecurityScope.swift */; };
+		24F97A24466161B09332D66D /* ClipMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */; };
+		25439B1913683780078492F7 /* PreviewPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */; };
+		2566EF38711413396B69DC4D /* CameraCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037D4140976C95373A4D0D3 /* CameraCategory.swift */; };
+		272F5BAEB7641543CD1787CF /* ClipMetadataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF60089E9F5346646B041D5E /* ClipMetadataTests.swift */; };
+		2952D0E7244FA3CB07662CB3 /* LogBatchCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		299630FEA792A4585327C037 /* CameraOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */; };
+		2C3DAC59BABAA15103B34D09 /* CubeLUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346ABB98B9CD107E5D80259 /* CubeLUT.swift */; };
+		2CB4E506DB218E58FEDECE8F /* LogBatchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; };
+		33124DD7D11FBCA921EEA663 /* QueuePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */; };
+		35FDDC5B9220E542AB6981CF /* LogBatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927D10C798D292B6CDC33A92 /* LogBatchError.swift */; };
+		37FC31B0B394216829BCF8F2 /* CameraOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */; };
+		409C346496E3E699A4F48B9F /* PreviewPlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */; };
+		411A10A225F7EA2087AF05EE /* PreviewPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */; };
+		412F7B4D0D87000EDE896821 /* StudioMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D953480C6A0955A5AEDA35 /* StudioMotion.swift */; };
+		44B7B93BC8C5CF187659E0E3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A61023F73360742490EC72A /* Localizable.xcstrings */; };
+		4B9B2BBAD394DBE37FAA7D4E /* LogBatchCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */; };
+		50672C616AAF83A9B93C0902 /* ExportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */; };
+		541A4E562BE4449658ACCE8D /* PreviewOrientationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */; };
+		5D5A9909A32ED8315DA046C4 /* ColorPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B214821B7BFE75C59E6C19 /* ColorPipeline.swift */; };
+		5E6788D7354C061BEE844E34 /* CameraGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC31FDFDDD35884726F398 /* CameraGallery.swift */; };
+		63ECCDDCCA146BB1B075C9B4 /* LogBatchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; };
+		6539595BC1BBE471E5A63AE0 /* VideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D49E2772A9FA1C56345D4 /* VideoSource.swift */; };
+		6AA7AD663FB3450F7AC658BE /* ProductImages in Resources */ = {isa = PBXBuildFile; fileRef = 6AF311E3E2CBBD0D6A365AF5 /* ProductImages */; };
+		6DDDBA9AE03E591438EA07F5 /* VideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321FE953F9E6BA11256C591 /* VideoExporter.swift */; };
+		711499AA7CBEB79DA23FF957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D80433856C19C173897DA2 /* Assets.xcassets */; };
+		7C931FBC28E70A4EBD5E936A /* ExportNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */; };
+		7FC1466FA9915B9507C142E5 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
+		8389445E5B9F11606766F98F /* ExportDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */; };
+		881BB793945F7FD5F93915B0 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */; };
+		89EB6EA3304ADC8F2AB1E778 /* ClipMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */; };
+		8C72A7323E6C236D5F920F84 /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAA27E4018737149489958 /* VideoPreview.swift */; };
+		8CC2B32E262FBD0DEA85B1FD /* PreviewPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */; };
+		928CB10782B440BABD249823 /* ExportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */; };
+		9297715B77680AD860271EC4 /* LUTCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E009C92428927DEA3CC01 /* LUTCatalog.swift */; };
+		952D9CC37B4BD8E34E61CC86 /* LUTChoiceTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */; };
+		95D4F021FC01DCFD8460CB86 /* StudioMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D953480C6A0955A5AEDA35 /* StudioMotion.swift */; };
+		994FE45DEAD1EEAE3A10E85F /* BatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD455B5743BFA39F22D4ED /* BatchStore.swift */; };
+		A2793F7DAD94975A0F701B17 /* BatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */; };
+		A3FB40E6C01F2FF464CC0C30 /* LUTInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */; };
+		A7B9235E8452613B868AE3CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7874950AF795DD2D2786BF43 /* Localizable.xcstrings */; };
+		AF1B46691DA3CC355B859B10 /* ExportDestinationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C10371648A348BC894696 /* ExportDestinationStore.swift */; };
+		B4BB29F055B279F07973F451 /* LogBatchCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B4E9C4D48D93382D604EE32C /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE15BA97E5250657331F0A0 /* SecurityScope.swift */; };
+		B88000AA9F8F5F9379785A3D /* ExportDestinationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C10371648A348BC894696 /* ExportDestinationStore.swift */; };
+		B9ECAAF7B50414F0ACDFBF31 /* CameraArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */; };
+		BA9DA8B972ECD401C6D3CAAB /* CameraCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037D4140976C95373A4D0D3 /* CameraCategory.swift */; };
+		CB1D4E5EE646BD22E02BA21A /* LUTChoiceTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */; };
+		CC91FFA05FCED40E79B8E0B7 /* ExportConfirmationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */; };
+		D2A5953AB4A4D3D1A6DB2D2B /* BatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD455B5743BFA39F22D4ED /* BatchStore.swift */; };
+		D56159DA2BA5913A9B06AE4F /* DJI in Resources */ = {isa = PBXBuildFile; fileRef = DBDA01A8013594C732656E63 /* DJI */; };
+		DB524A8FB5FBD67D15DB7771 /* VideoPreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */; };
+		DC9295BFD4CD2E6FACDB1E7A /* CameraOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */; };
+		E81C221D5380803F4B4914D0 /* QueuePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */; };
+		E856FCA2AFCB447BCACDB33D /* test_lut_import.py in Resources */ = {isa = PBXBuildFile; fileRef = 78FF60785A25574301675A90 /* test_lut_import.py */; };
+		EC8162583308E866B5D5DE5A /* ExportNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */; };
+		F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */; };
+		F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
+		F576973921F595B45D36CE59 /* ExportCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C79FB00A8120190E908580E /* ExportCompletionTests.swift */; };
+		F61C730E1A019D98B2061FB0 /* StudioPreviewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */; };
+		F7770AC1F7B4CA7CC1D939D8 /* PreviewPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */; };
+		F7CBEF0DF788803FC600F6CF /* ExportLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */; };
+		F88951CC17ADCB5CB566C198 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADFC4BCB050188DFC6D505D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005EF9B52001D647D79E99A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D222447BE42B8FC18247275C;
+			remoteInfo = LogBatchCore;
+		};
+		B0132B9F2597EE3B6CFC6162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005EF9B52001D647D79E99A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D222447BE42B8FC18247275C;
+			remoteInfo = LogBatchCore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D98A120E93BDC71519F36FF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2952D0E7244FA3CB07662CB3 /* LogBatchCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE53D600F75629C1C8CC0D8F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4BB29F055B279F07973F451 /* LogBatchCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		048E009C92428927DEA3CC01 /* LUTCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTCatalog.swift; sourceTree = "<group>"; };
+		05D953480C6A0955A5AEDA35 /* StudioMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioMotion.swift; sourceTree = "<group>"; };
+		11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductArtworkLibrary.swift; sourceTree = "<group>"; };
+		184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlaybackTests.swift; sourceTree = "<group>"; };
+		1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionWorkspace.swift; sourceTree = "<group>"; };
+		3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchCoreTests.swift; sourceTree = "<group>"; };
+		346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLayoutTests.swift; sourceTree = "<group>"; };
+		36AAA27E4018737149489958 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+		3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportBar.swift; sourceTree = "<group>"; };
+		3EE15BA97E5250657331F0A0 /* SecurityScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScope.swift; sourceTree = "<group>"; };
+		3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDestinationTests.swift; sourceTree = "<group>"; };
+		4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlayback.swift; sourceTree = "<group>"; };
+		4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportConfirmationTests.swift; sourceTree = "<group>"; };
+		4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTChoiceTitle.swift; sourceTree = "<group>"; };
+		4C79FB00A8120190E908580E /* ExportCompletionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportCompletionTests.swift; sourceTree = "<group>"; };
+		501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportNotifications.swift; sourceTree = "<group>"; };
+		525D49E2772A9FA1C56345D4 /* VideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSource.swift; sourceTree = "<group>"; };
+		5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBatchCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePane.swift; sourceTree = "<group>"; };
+		6136C0CD4AC831CB22890C87 /* LogBatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchApp.swift; sourceTree = "<group>"; };
+		6AF311E3E2CBBD0D6A365AF5 /* ProductImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProductImages; path = LogBatch/Resources/ProductImages; sourceTree = SOURCE_ROOT; };
+		6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchStoreTests.swift; sourceTree = "<group>"; };
+		7874950AF795DD2D2786BF43 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		78FF60785A25574301675A90 /* test_lut_import.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_lut_import.py; sourceTree = "<group>"; };
+		7A61023F73360742490EC72A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrderTests.swift; sourceTree = "<group>"; };
+		81AC31FDFDDD35884726F398 /* CameraGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGallery.swift; sourceTree = "<group>"; };
+		89FD455B5743BFA39F22D4ED /* BatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchStore.swift; sourceTree = "<group>"; };
+		927D10C798D292B6CDC33A92 /* LogBatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchError.swift; sourceTree = "<group>"; };
+		9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPane.swift; sourceTree = "<group>"; };
+		B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductArtworkTests.swift; sourceTree = "<group>"; };
+		B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraArtwork.swift; sourceTree = "<group>"; };
+		BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrderStore.swift; sourceTree = "<group>"; };
+		BE3A9B5EED037D34A2122F46 /* LogBatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogBatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTInspector.swift; sourceTree = "<group>"; };
+		C321FE953F9E6BA11256C591 /* VideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExporter.swift; sourceTree = "<group>"; };
+		D037D4140976C95373A4D0D3 /* CameraCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCategory.swift; sourceTree = "<group>"; };
+		DBDA01A8013594C732656E63 /* DJI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DJI; path = LogBatch/Resources/DJI; sourceTree = SOURCE_ROOT; };
+		DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRenderer.swift; sourceTree = "<group>"; };
+		E2D80433856C19C173897DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7B214821B7BFE75C59E6C19 /* ColorPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPipeline.swift; sourceTree = "<group>"; };
+		EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewOrientationTests.swift; sourceTree = "<group>"; };
+		F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlaybackControls.swift; sourceTree = "<group>"; };
+		F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipMetadata.swift; sourceTree = "<group>"; };
+		F346ABB98B9CD107E5D80259 /* CubeLUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeLUT.swift; sourceTree = "<group>"; };
+		FC1C10371648A348BC894696 /* ExportDestinationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDestinationStore.swift; sourceTree = "<group>"; };
+		FF60089E9F5346646B041D5E /* ClipMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipMetadataTests.swift; sourceTree = "<group>"; };
+		FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioPreviewOptions.swift; sourceTree = "<group>"; };
+		FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LogBatchCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096077CC7E3E62E19795DBBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63ECCDDCCA146BB1B075C9B4 /* LogBatchCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABE1E532D460CC4C851E73A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CB4E506DB218E58FEDECE8F /* LogBatchCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065E4611FA518FA5B6E41EB2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */,
+				4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */,
+				3EE15BA97E5250657331F0A0 /* SecurityScope.swift */,
+				05D953480C6A0955A5AEDA35 /* StudioMotion.swift */,
+				FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		295894274010CC6C32E8FDC4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D037D4140976C95373A4D0D3 /* CameraCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41C09FD967405426D3A8AEE8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6136C0CD4AC831CB22890C87 /* LogBatchApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		48676126DE43E8C2CC19F66E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7BE931966D21512ABD771142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE3A9B5EED037D34A2122F46 /* LogBatch.app */,
+				FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */,
+				5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8464E0EDBC974A3A927F828C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2D80433856C19C173897DA2 /* Assets.xcassets */,
+				7A61023F73360742490EC72A /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A518636CA58D1563C31D2790 = {
+			isa = PBXGroup;
+			children = (
+				DBDA01A8013594C732656E63 /* DJI */,
+				6AF311E3E2CBBD0D6A365AF5 /* ProductImages */,
+				BA270F7F81D4B8ADDB662C6A /* Core */,
+				DB5C73A6FB0DF2348F66D24C /* LogBatch */,
+				F6BE123DF4AF58E7D6FA7673 /* Tests */,
+				7BE931966D21512ABD771142 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6DE72989194357765BCBF38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F346ABB98B9CD107E5D80259 /* CubeLUT.swift */,
+				927D10C798D292B6CDC33A92 /* LogBatchError.swift */,
+				048E009C92428927DEA3CC01 /* LUTCatalog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB77FB343DACE4DD55640024 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7874950AF795DD2D2786BF43 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AF986270D6C8B4CAD7B6C308 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */,
+				81AC31FDFDDD35884726F398 /* CameraGallery.swift */,
+				6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */,
+				1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */,
+				3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */,
+				C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */,
+				9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */,
+				F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */,
+				5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9DC21F5089EC3BBF879AF52 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E7B214821B7BFE75C59E6C19 /* ColorPipeline.swift */,
+				C321FE953F9E6BA11256C591 /* VideoExporter.swift */,
+				36AAA27E4018737149489958 /* VideoPreview.swift */,
+				DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */,
+				525D49E2772A9FA1C56345D4 /* VideoSource.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA270F7F81D4B8ADDB662C6A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A6DE72989194357765BCBF38 /* Models */,
+				AB77FB343DACE4DD55640024 /* Resources */,
+				B9DC21F5089EC3BBF879AF52 /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BA6D1C8550251ABB84C2F1B1 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				89FD455B5743BFA39F22D4ED /* BatchStore.swift */,
+				BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */,
+				FC1C10371648A348BC894696 /* ExportDestinationStore.swift */,
+				4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */,
+				11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		DB5C73A6FB0DF2348F66D24C /* LogBatch */ = {
+			isa = PBXGroup;
+			children = (
+				41C09FD967405426D3A8AEE8 /* App */,
+				295894274010CC6C32E8FDC4 /* Models */,
+				8464E0EDBC974A3A927F828C /* Resources */,
+				48676126DE43E8C2CC19F66E /* Services */,
+				BA6D1C8550251ABB84C2F1B1 /* Stores */,
+				065E4611FA518FA5B6E41EB2 /* Support */,
+				AF986270D6C8B4CAD7B6C308 /* Views */,
+			);
+			path = LogBatch;
+			sourceTree = "<group>";
+		};
+		F6BE123DF4AF58E7D6FA7673 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */,
+				7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */,
+				FF60089E9F5346646B041D5E /* ClipMetadataTests.swift */,
+				4C79FB00A8120190E908580E /* ExportCompletionTests.swift */,
+				4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */,
+				3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */,
+				346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */,
+				3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */,
+				EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */,
+				184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */,
+				B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */,
+				78FF60785A25574301675A90 /* test_lut_import.py */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EEC61A42B97B807A35E110C /* LogBatchCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAC8788B5E7CD14983795A8 /* Build configuration list for PBXNativeTarget "LogBatchCoreTests" */;
+			buildPhases = (
+				B4DE4E5CABFB82DDC6C9A710 /* Sources */,
+				A2C1368180960C34266A2A9F /* Resources */,
+				096077CC7E3E62E19795DBBB /* Frameworks */,
+				EE53D600F75629C1C8CC0D8F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5332134CE03EA3251073EDD6 /* PBXTargetDependency */,
+			);
+			name = LogBatchCoreTests;
+			packageProductDependencies = (
+			);
+			productName = LogBatchCoreTests;
+			productReference = 5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D4253DB2FABD150A3BC05C2 /* LogBatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4954EE80645868D1004FA36 /* Build configuration list for PBXNativeTarget "LogBatch" */;
+			buildPhases = (
+				1EA0E746E4A49CD42E750C43 /* Sources */,
+				CADF2CEAA1653BC07A0236D6 /* Resources */,
+				3ABE1E532D460CC4C851E73A /* Frameworks */,
+				D98A120E93BDC71519F36FF2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EE8F44719486C6D24740BCB /* PBXTargetDependency */,
+			);
+			name = LogBatch;
+			packageProductDependencies = (
+			);
+			productName = LogBatch;
+			productReference = BE3A9B5EED037D34A2122F46 /* LogBatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D222447BE42B8FC18247275C /* LogBatchCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 253028DEFD304D3F4B8382AC /* Build configuration list for PBXNativeTarget "LogBatchCore" */;
+			buildPhases = (
+				B332C2FCAE8B7D034109F55C /* Sources */,
+				1D3713C0D4A2E4C8FD60F4CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogBatchCore;
+			packageProductDependencies = (
+			);
+			productName = LogBatchCore;
+			productReference = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		005EF9B52001D647D79E99A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = B02127F118570044997E39D9 /* Build configuration list for PBXProject "LogBatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ja,
+				ko,
+				"zh-Hans",
+			);
+			mainGroup = A518636CA58D1563C31D2790;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7BE931966D21512ABD771142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D222447BE42B8FC18247275C /* LogBatchCore */,
+				6D4253DB2FABD150A3BC05C2 /* LogBatch */,
+				5EEC61A42B97B807A35E110C /* LogBatchCoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D3713C0D4A2E4C8FD60F4CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56159DA2BA5913A9B06AE4F /* DJI in Resources */,
+				A7B9235E8452613B868AE3CF /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2C1368180960C34266A2A9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EECAC4ED34B4999B3434412 /* Assets.xcassets in Resources */,
+				44B7B93BC8C5CF187659E0E3 /* Localizable.xcstrings in Resources */,
+				E856FCA2AFCB447BCACDB33D /* test_lut_import.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CADF2CEAA1653BC07A0236D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711499AA7CBEB79DA23FF957 /* Assets.xcassets in Resources */,
+				1760C9BD3032C26B21130F3C /* Localizable.xcstrings in Resources */,
+				6AA7AD663FB3450F7AC658BE /* ProductImages in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EA0E746E4A49CD42E750C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A5953AB4A4D3D1A6DB2D2B /* BatchStore.swift in Sources */,
+				1C729759FA5501CEE51F6024 /* CameraArtwork.swift in Sources */,
+				2566EF38711413396B69DC4D /* CameraCategory.swift in Sources */,
+				5E6788D7354C061BEE844E34 /* CameraGallery.swift in Sources */,
+				299630FEA792A4585327C037 /* CameraOrderStore.swift in Sources */,
+				24F97A24466161B09332D66D /* ClipMetadata.swift in Sources */,
+				054BDD46F5EA09EE2C6A0627 /* ContentView.swift in Sources */,
+				7FC1466FA9915B9507C142E5 /* ConversionWorkspace.swift in Sources */,
+				50672C616AAF83A9B93C0902 /* ExportBar.swift in Sources */,
+				AF1B46691DA3CC355B859B10 /* ExportDestinationStore.swift in Sources */,
+				7C931FBC28E70A4EBD5E936A /* ExportNotifications.swift in Sources */,
+				CB1D4E5EE646BD22E02BA21A /* LUTChoiceTitle.swift in Sources */,
+				A3FB40E6C01F2FF464CC0C30 /* LUTInspector.swift in Sources */,
+				128D879FCA22E2A4F29C3D6B /* LogBatchApp.swift in Sources */,
+				881BB793945F7FD5F93915B0 /* PreviewPane.swift in Sources */,
+				8CC2B32E262FBD0DEA85B1FD /* PreviewPlayback.swift in Sources */,
+				F7770AC1F7B4CA7CC1D939D8 /* PreviewPlaybackControls.swift in Sources */,
+				048108B9E65B21C749FE9E38 /* ProductArtworkLibrary.swift in Sources */,
+				E81C221D5380803F4B4914D0 /* QueuePane.swift in Sources */,
+				20DEE362F296AAF06F4947DD /* SecurityScope.swift in Sources */,
+				412F7B4D0D87000EDE896821 /* StudioMotion.swift in Sources */,
+				F61C730E1A019D98B2061FB0 /* StudioPreviewOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B332C2FCAE8B7D034109F55C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5A9909A32ED8315DA046C4 /* ColorPipeline.swift in Sources */,
+				2C3DAC59BABAA15103B34D09 /* CubeLUT.swift in Sources */,
+				9297715B77680AD860271EC4 /* LUTCatalog.swift in Sources */,
+				35FDDC5B9220E542AB6981CF /* LogBatchError.swift in Sources */,
+				6DDDBA9AE03E591438EA07F5 /* VideoExporter.swift in Sources */,
+				8C72A7323E6C236D5F920F84 /* VideoPreview.swift in Sources */,
+				DB524A8FB5FBD67D15DB7771 /* VideoPreviewRenderer.swift in Sources */,
+				6539595BC1BBE471E5A63AE0 /* VideoSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4DE4E5CABFB82DDC6C9A710 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994FE45DEAD1EEAE3A10E85F /* BatchStore.swift in Sources */,
+				A2793F7DAD94975A0F701B17 /* BatchStoreTests.swift in Sources */,
+				B9ECAAF7B50414F0ACDFBF31 /* CameraArtwork.swift in Sources */,
+				BA9DA8B972ECD401C6D3CAAB /* CameraCategory.swift in Sources */,
+				DC9295BFD4CD2E6FACDB1E7A /* CameraOrderStore.swift in Sources */,
+				37FC31B0B394216829BCF8F2 /* CameraOrderTests.swift in Sources */,
+				89EB6EA3304ADC8F2AB1E778 /* ClipMetadata.swift in Sources */,
+				272F5BAEB7641543CD1787CF /* ClipMetadataTests.swift in Sources */,
+				F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */,
+				928CB10782B440BABD249823 /* ExportBar.swift in Sources */,
+				F576973921F595B45D36CE59 /* ExportCompletionTests.swift in Sources */,
+				CC91FFA05FCED40E79B8E0B7 /* ExportConfirmationTests.swift in Sources */,
+				B88000AA9F8F5F9379785A3D /* ExportDestinationStore.swift in Sources */,
+				8389445E5B9F11606766F98F /* ExportDestinationTests.swift in Sources */,
+				F7CBEF0DF788803FC600F6CF /* ExportLayoutTests.swift in Sources */,
+				EC8162583308E866B5D5DE5A /* ExportNotifications.swift in Sources */,
+				952D9CC37B4BD8E34E61CC86 /* LUTChoiceTitle.swift in Sources */,
+				04D7962C1CC45781A96108C1 /* LUTInspector.swift in Sources */,
+				4B9B2BBAD394DBE37FAA7D4E /* LogBatchCoreTests.swift in Sources */,
+				541A4E562BE4449658ACCE8D /* PreviewOrientationTests.swift in Sources */,
+				F88951CC17ADCB5CB566C198 /* PreviewPane.swift in Sources */,
+				411A10A225F7EA2087AF05EE /* PreviewPlayback.swift in Sources */,
+				25439B1913683780078492F7 /* PreviewPlaybackControls.swift in Sources */,
+				409C346496E3E699A4F48B9F /* PreviewPlaybackTests.swift in Sources */,
+				F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */,
+				050179CFC2C6C8F4F9D0DA05 /* ProductArtworkTests.swift in Sources */,
+				33124DD7D11FBCA921EEA663 /* QueuePane.swift in Sources */,
+				B4E9C4D48D93382D604EE32C /* SecurityScope.swift in Sources */,
+				95D4F021FC01DCFD8460CB86 /* StudioMotion.swift in Sources */,
+				0C687F9ED3D8BE124B3F9782 /* StudioPreviewOptions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EE8F44719486C6D24740BCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D222447BE42B8FC18247275C /* LogBatchCore */;
+			targetProxy = B0132B9F2597EE3B6CFC6162 /* PBXContainerItemProxy */;
+		};
+		5332134CE03EA3251073EDD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D222447BE42B8FC18247275C /* LogBatchCore */;
+			targetProxy = ADFC4BCB050188DFC6D505D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A30E85A59EB6A2D4F4B4A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.tests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		66FF673B1797782D4AAD68C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		6BDCAA72C21C44B8B4B4C3A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		831EDC419A08320EF9242239 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		851BAC02A15C869A37534E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				EXECUTABLE_NAME = LogLift;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LogLift for DJI";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.app;
+				PRODUCT_NAME = "LogLift for DJI";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		8841FF61F18FADFB3ACF5781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
+				EXECUTABLE_NAME = LogLift;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "LogLift for DJI";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.app;
+				PRODUCT_NAME = "LogLift for DJI";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		E1422E05E96C31686E31A908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		FE980E452E089B0275CA8944 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.core;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		253028DEFD304D3F4B8382AC /* Build configuration list for PBXNativeTarget "LogBatchCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE980E452E089B0275CA8944 /* Debug */,
+				66FF673B1797782D4AAD68C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B02127F118570044997E39D9 /* Build configuration list for PBXProject "LogBatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BDCAA72C21C44B8B4B4C3A9 /* Debug */,
+				E1422E05E96C31686E31A908 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4954EE80645868D1004FA36 /* Build configuration list for PBXNativeTarget "LogBatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851BAC02A15C869A37534E42 /* Debug */,
+				8841FF61F18FADFB3ACF5781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DDAC8788B5E7CD14983795A8 /* Build configuration list for PBXNativeTarget "LogBatchCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A30E85A59EB6A2D4F4B4A0B /* Debug */,
+				831EDC419A08320EF9242239 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 005EF9B52001D647D79E99A0 /* Project object */;
+}

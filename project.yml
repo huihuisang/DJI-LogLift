@@ -1,0 +1,92 @@
+name: LogBatch
+options:
+  deploymentTarget:
+    macOS: '14.0'
+  developmentLanguage: en
+  knownRegions: [en, zh-Hans, ja, ko]
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    MACOSX_DEPLOYMENT_TARGET: '14.0'
+    CODE_SIGNING_ALLOWED: NO
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    MARKETING_VERSION: '0.1.0'
+    CURRENT_PROJECT_VERSION: 1
+targets:
+  LogBatchCore:
+    type: framework
+    platform: macOS
+    sources:
+      - path: Core
+      - path: LogBatch/Resources/DJI
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.core
+        GENERATE_INFOPLIST_FILE: YES
+  LogBatch:
+    type: application
+    platform: macOS
+    sources:
+      - path: LogBatch
+        excludes: [Resources/DJI, Resources/ProductImages]
+      - path: LogBatch/Resources/ProductImages
+        type: folder
+        buildPhase: resources
+    dependencies:
+      - target: LogBatchCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.app
+        PRODUCT_NAME: LogLift for DJI
+        EXECUTABLE_NAME: LogLift
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: LogLift for DJI
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.video
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_USER_SELECTED_FILES: readwrite
+  LogBatchCoreTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+      - path: LogBatch/Stores/BatchStore.swift
+      - path: LogBatch/Stores/ExportDestinationStore.swift
+      - path: LogBatch/Stores/PreviewPlayback.swift
+      - path: LogBatch/Services/ExportNotifications.swift
+      - path: LogBatch/Stores/ProductArtworkLibrary.swift
+      - path: LogBatch/Stores/CameraOrderStore.swift
+      - path: LogBatch/Models/CameraCategory.swift
+      - path: LogBatch/Support/LUTChoiceTitle.swift
+      - path: LogBatch/Support/ClipMetadata.swift
+      - path: LogBatch/Support/SecurityScope.swift
+      - path: LogBatch/Support/StudioMotion.swift
+      - path: LogBatch/Support/StudioPreviewOptions.swift
+      - path: LogBatch/Views/ConversionWorkspace.swift
+      - path: LogBatch/Views/ExportBar.swift
+      - path: LogBatch/Views/LUTInspector.swift
+      - path: LogBatch/Views/PreviewPane.swift
+      - path: LogBatch/Views/PreviewPlaybackControls.swift
+      - path: LogBatch/Views/QueuePane.swift
+      - path: LogBatch/Views/CameraArtwork.swift
+      - path: LogBatch/Resources/Assets.xcassets
+      - path: LogBatch/Resources/Localizable.xcstrings
+    dependencies:
+      - target: LogBatchCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.tests
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  LogBatch:
+    build:
+      targets:
+        LogBatch: all
+    test:
+      targets: [LogBatchCoreTests]
+      environmentVariables:
+        LOGBATCH_FIXTURE_DIR: $(LOGBATCH_FIXTURE_DIR)
+
