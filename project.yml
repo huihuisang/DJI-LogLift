@@ -53,6 +53,7 @@ targets:
     platform: macOS
     sources:
       - path: Tests
+        excludes: [__pycache__, '*.py', '*.pyc']
       - path: LogBatch/Stores/BatchStore.swift
       - path: LogBatch/Stores/ExportDestinationStore.swift
       - path: LogBatch/Stores/PreviewPlayback.swift

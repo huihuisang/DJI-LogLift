@@ -57,7 +57,6 @@
 		A2793F7DAD94975A0F701B17 /* BatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */; };
 		A3FB40E6C01F2FF464CC0C30 /* LUTInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */; };
 		A7B9235E8452613B868AE3CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7874950AF795DD2D2786BF43 /* Localizable.xcstrings */; };
-		AC4CA91F9EB0D0FA3952E721 /* test_release.py in Resources */ = {isa = PBXBuildFile; fileRef = 44F6B6B72144799F562C7BA9 /* test_release.py */; };
 		AF1B46691DA3CC355B859B10 /* ExportDestinationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C10371648A348BC894696 /* ExportDestinationStore.swift */; };
 		B4BB29F055B279F07973F451 /* LogBatchCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4E9C4D48D93382D604EE32C /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE15BA97E5250657331F0A0 /* SecurityScope.swift */; };
@@ -71,7 +70,6 @@
 		DB524A8FB5FBD67D15DB7771 /* VideoPreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */; };
 		DC9295BFD4CD2E6FACDB1E7A /* CameraOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */; };
 		E81C221D5380803F4B4914D0 /* QueuePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */; };
-		E856FCA2AFCB447BCACDB33D /* test_lut_import.py in Resources */ = {isa = PBXBuildFile; fileRef = 78FF60785A25574301675A90 /* test_lut_import.py */; };
 		EC8162583308E866B5D5DE5A /* ExportNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */; };
 		F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */; };
 		F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
@@ -136,7 +134,6 @@
 		3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportBar.swift; sourceTree = "<group>"; };
 		3EE15BA97E5250657331F0A0 /* SecurityScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScope.swift; sourceTree = "<group>"; };
 		3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDestinationTests.swift; sourceTree = "<group>"; };
-		44F6B6B72144799F562C7BA9 /* test_release.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_release.py; sourceTree = "<group>"; };
 		4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlayback.swift; sourceTree = "<group>"; };
 		4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportConfirmationTests.swift; sourceTree = "<group>"; };
 		4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTChoiceTitle.swift; sourceTree = "<group>"; };
@@ -150,7 +147,6 @@
 		6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchStoreTests.swift; sourceTree = "<group>"; };
 		7874950AF795DD2D2786BF43 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		78FF60785A25574301675A90 /* test_lut_import.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_lut_import.py; sourceTree = "<group>"; };
 		7A61023F73360742490EC72A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrderTests.swift; sourceTree = "<group>"; };
 		81AC31FDFDDD35884726F398 /* CameraGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGallery.swift; sourceTree = "<group>"; };
@@ -361,8 +357,6 @@
 				EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */,
 				184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */,
 				B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */,
-				78FF60785A25574301675A90 /* test_lut_import.py */,
-				44F6B6B72144799F562C7BA9 /* test_release.py */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -481,8 +475,6 @@
 			files = (
 				1EECAC4ED34B4999B3434412 /* Assets.xcassets in Resources */,
 				44B7B93BC8C5CF187659E0E3 /* Localizable.xcstrings in Resources */,
-				E856FCA2AFCB447BCACDB33D /* test_lut_import.py in Resources */,
-				AC4CA91F9EB0D0FA3952E721 /* test_release.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
