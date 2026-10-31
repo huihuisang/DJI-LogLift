@@ -1,6 +1,6 @@
 import Foundation
 
-final class SecurityScope {
+final class SecurityScope: Sendable {
     let url: URL
     let active: Bool
 

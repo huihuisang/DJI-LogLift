@@ -53,6 +53,14 @@ struct ContentView: View {
         }
         .background(.background)
         .tint(StudioPalette.accent)
+        .handlesExternalEvents(preferring: ["*"], allowing: ["*"])
+        .onOpenURL { url in
+            do {
+                let request = try FinderImportRequest.consume(url)
+                store.importFromFinder(request.files)
+                showsGallery = false
+            } catch { store.message = error.localizedDescription }
+        }
         .task { await artwork.prepare() }
         .onChange(of: store.selectedProductID) { store.selectCamera() }
         .onChange(of: store.selectedLUTID) { store.cancelExportConfirmation() }

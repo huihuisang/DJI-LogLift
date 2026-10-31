@@ -1,5 +1,7 @@
 # Project guidance
 
+- This public checkout is the only active development source for LogLift. Keep the original private repository and its internal records in the local archive; do not publish that history.
+
 - Use English for code, comments, UI source text, and commit messages.
 - Localize UI text in English, Simplified Chinese, Japanese, and Korean.
 - Use jj with colocated Git for local version control.

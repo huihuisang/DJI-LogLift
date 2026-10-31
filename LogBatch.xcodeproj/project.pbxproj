@@ -13,10 +13,11 @@
 		054BDD46F5EA09EE2C6A0627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */; };
 		0C687F9ED3D8BE124B3F9782 /* StudioPreviewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */; };
 		128D879FCA22E2A4F29C3D6B /* LogBatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6136C0CD4AC831CB22890C87 /* LogBatchApp.swift */; };
+		1538ECB29114ECB1D6B1CC9F /* ContainingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B63830B27CDC75508615 /* ContainingApplication.swift */; };
 		1760C9BD3032C26B21130F3C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A61023F73360742490EC72A /* Localizable.xcstrings */; };
+		19009F57E976EB332B17BA5D /* FinderImportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435204280E16508EBDD8A268 /* FinderImportRequest.swift */; };
 		1C729759FA5501CEE51F6024 /* CameraArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */; };
 		1EECAC4ED34B4999B3434412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D80433856C19C173897DA2 /* Assets.xcassets */; };
-		20DEE362F296AAF06F4947DD /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE15BA97E5250657331F0A0 /* SecurityScope.swift */; };
 		24F97A24466161B09332D66D /* ClipMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */; };
 		25439B1913683780078492F7 /* PreviewPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */; };
 		2566EF38711413396B69DC4D /* CameraCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037D4140976C95373A4D0D3 /* CameraCategory.swift */; };
@@ -25,59 +26,91 @@
 		299630FEA792A4585327C037 /* CameraOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */; };
 		2C3DAC59BABAA15103B34D09 /* CubeLUT.swift in Sources */ = {isa = PBXBuildFile; fileRef = F346ABB98B9CD107E5D80259 /* CubeLUT.swift */; };
 		2CB4E506DB218E58FEDECE8F /* LogBatchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; };
+		3170BEF439229B0DF40C0EF6 /* FinderImportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435204280E16508EBDD8A268 /* FinderImportRequest.swift */; };
 		33124DD7D11FBCA921EEA663 /* QueuePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */; };
 		35FDDC5B9220E542AB6981CF /* LogBatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927D10C798D292B6CDC33A92 /* LogBatchError.swift */; };
 		37FC31B0B394216829BCF8F2 /* CameraOrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */; };
+		39F34DEB9A778B1688F311B6 /* GalleryInitialFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D861513686DC264D403BF1A /* GalleryInitialFocus.swift */; };
+		3B81EF21FE763F4B77FF6BC6 /* ExternalImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91F7723C6D8773633077F6 /* ExternalImportTests.swift */; };
+		3C23BA3C50E3524DDF2D50DA /* ImportAccessStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA6E13541D59CC4A91406B /* ImportAccessStore.swift */; };
 		409C346496E3E699A4F48B9F /* PreviewPlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */; };
 		411A10A225F7EA2087AF05EE /* PreviewPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */; };
 		412F7B4D0D87000EDE896821 /* StudioMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D953480C6A0955A5AEDA35 /* StudioMotion.swift */; };
 		44B7B93BC8C5CF187659E0E3 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7A61023F73360742490EC72A /* Localizable.xcstrings */; };
+		44C9E84500C64663B3E96276 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F445D831AFAFC3D7FF30F63 /* FinderSync.framework */; };
+		45D956D94E878045C0E5996D /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F445D831AFAFC3D7FF30F63 /* FinderSync.framework */; };
+		473DFBD2563BC0121D92A5EB /* GalleryInitialFocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D861513686DC264D403BF1A /* GalleryInitialFocus.swift */; };
+		48706229D6AE14C7403FF689 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = DA88CF1FFA93255ECAD33779 /* Localizable.xcstrings */; };
 		4B9B2BBAD394DBE37FAA7D4E /* LogBatchCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */; };
+		4E2AB2D4716FF19222333E74 /* FinderCallbackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB923F950ECFE1CAEF616139 /* FinderCallbackTests.swift */; };
+		4F57F9957A3974DFCEC4F067 /* FinderSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F445D831AFAFC3D7FF30F63 /* FinderSync.framework */; };
 		50672C616AAF83A9B93C0902 /* ExportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */; };
 		541A4E562BE4449658ACCE8D /* PreviewOrientationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */; };
 		5D5A9909A32ED8315DA046C4 /* ColorPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B214821B7BFE75C59E6C19 /* ColorPipeline.swift */; };
 		5E6788D7354C061BEE844E34 /* CameraGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC31FDFDDD35884726F398 /* CameraGallery.swift */; };
+		5E8D23728579A4FAFC0FD3D4 /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7E3826B9167536B585FA1 /* SecurityScope.swift */; };
+		60F0BB57127D0598D302F7DC /* FinderMenuIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E4F6D805F5B9CF8A59B95 /* FinderMenuIcon.swift */; };
 		63ECCDDCCA146BB1B075C9B4 /* LogBatchCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; };
 		6539595BC1BBE471E5A63AE0 /* VideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525D49E2772A9FA1C56345D4 /* VideoSource.swift */; };
 		6AA7AD663FB3450F7AC658BE /* ProductImages in Resources */ = {isa = PBXBuildFile; fileRef = 6AF311E3E2CBBD0D6A365AF5 /* ProductImages */; };
+		6C38276C8FFFF933FAA7D63F /* FinderMenuIconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B64DEE3A2695A29CACEF80 /* FinderMenuIconTests.swift */; };
 		6DDDBA9AE03E591438EA07F5 /* VideoExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C321FE953F9E6BA11256C591 /* VideoExporter.swift */; };
 		711499AA7CBEB79DA23FF957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D80433856C19C173897DA2 /* Assets.xcassets */; };
+		71B7E7CFFDA8A6556BE762F9 /* ImportAccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FE5918A59A2785CECD0796 /* ImportAccessTests.swift */; };
+		73E4F9A9D40021A84B280016 /* VideoFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63170B70742243559EF2EDF0 /* VideoFiles.swift */; };
+		7A8FB920CBC79D2727555675 /* FinderAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A1AC033862071223DF06AE4 /* FinderAppIcon.png */; };
 		7C931FBC28E70A4EBD5E936A /* ExportNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */; };
 		7FC1466FA9915B9507C142E5 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
 		8389445E5B9F11606766F98F /* ExportDestinationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */; };
 		881BB793945F7FD5F93915B0 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */; };
 		89EB6EA3304ADC8F2AB1E778 /* ClipMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */; };
+		8AA14400AAE9C534524C0E01 /* VideoFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63170B70742243559EF2EDF0 /* VideoFiles.swift */; };
+		8B4F3B2A476D1952F71B6054 /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7E3826B9167536B585FA1 /* SecurityScope.swift */; };
 		8C72A7323E6C236D5F920F84 /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AAA27E4018737149489958 /* VideoPreview.swift */; };
 		8CC2B32E262FBD0DEA85B1FD /* PreviewPlayback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */; };
 		928CB10782B440BABD249823 /* ExportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */; };
 		9297715B77680AD860271EC4 /* LUTCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048E009C92428927DEA3CC01 /* LUTCatalog.swift */; };
 		952D9CC37B4BD8E34E61CC86 /* LUTChoiceTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */; };
 		95D4F021FC01DCFD8460CB86 /* StudioMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D953480C6A0955A5AEDA35 /* StudioMotion.swift */; };
+		978C8AF33013FAF1AE5D36AC /* VideoFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63170B70742243559EF2EDF0 /* VideoFiles.swift */; };
 		994FE45DEAD1EEAE3A10E85F /* BatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD455B5743BFA39F22D4ED /* BatchStore.swift */; };
+		9B436373E5F4A140A4F847AA /* ImportAccessStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA6E13541D59CC4A91406B /* ImportAccessStore.swift */; };
 		A2793F7DAD94975A0F701B17 /* BatchStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */; };
 		A3FB40E6C01F2FF464CC0C30 /* LUTInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */; };
 		A7B9235E8452613B868AE3CF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 7874950AF795DD2D2786BF43 /* Localizable.xcstrings */; };
+		AB215D68F7058EE5A36E6FC2 /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D7E3826B9167536B585FA1 /* SecurityScope.swift */; };
 		AF1B46691DA3CC355B859B10 /* ExportDestinationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C10371648A348BC894696 /* ExportDestinationStore.swift */; };
 		B4BB29F055B279F07973F451 /* LogBatchCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B4E9C4D48D93382D604EE32C /* SecurityScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE15BA97E5250657331F0A0 /* SecurityScope.swift */; };
 		B88000AA9F8F5F9379785A3D /* ExportDestinationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C10371648A348BC894696 /* ExportDestinationStore.swift */; };
 		B9ECAAF7B50414F0ACDFBF31 /* CameraArtwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */; };
 		BA9DA8B972ECD401C6D3CAAB /* CameraCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D037D4140976C95373A4D0D3 /* CameraCategory.swift */; };
+		BAE58DBA08B80F93F0907265 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751C260D0C5B2896DFC1489 /* FinderSync.swift */; };
+		BCE31DF1D14C1A0EEC71B19E /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E751C260D0C5B2896DFC1489 /* FinderSync.swift */; };
+		C0150FC757F7EB991510992F /* ContainingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B63830B27CDC75508615 /* ContainingApplication.swift */; };
 		CB1D4E5EE646BD22E02BA21A /* LUTChoiceTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */; };
 		CC91FFA05FCED40E79B8E0B7 /* ExportConfirmationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */; };
+		CC9B410CB410BD4053E5AC64 /* CameraGalleryFocusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED0021DF6501C09DE72B757 /* CameraGalleryFocusTests.swift */; };
+		CEF233F81276F5C48C41F4B4 /* FinderAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A1AC033862071223DF06AE4 /* FinderAppIcon.png */; };
+		D20D0B84228E1257F65205CB /* LogLiftFinderExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5C9AF4B6178D25B44AFC6B64 /* LogLiftFinderExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D2A5953AB4A4D3D1A6DB2D2B /* BatchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FD455B5743BFA39F22D4ED /* BatchStore.swift */; };
 		D56159DA2BA5913A9B06AE4F /* DJI in Resources */ = {isa = PBXBuildFile; fileRef = DBDA01A8013594C732656E63 /* DJI */; };
+		D8408066A157180ED0E33AC0 /* FinderImportRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B2C86A1E957D60A526183 /* FinderImportRequestTests.swift */; };
 		DB524A8FB5FBD67D15DB7771 /* VideoPreviewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */; };
 		DC9295BFD4CD2E6FACDB1E7A /* CameraOrderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */; };
+		E2517E1D14000E90614A26CE /* ContainingApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08B63830B27CDC75508615 /* ContainingApplication.swift */; };
+		E5231D76184DA3E92D8DCC41 /* FinderImportSelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857C05902CFB8300E43467C1 /* FinderImportSelectionTests.swift */; };
 		E81C221D5380803F4B4914D0 /* QueuePane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */; };
+		EA4DCEEE889F81D56DB64B72 /* FinderMenuIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5E4F6D805F5B9CF8A59B95 /* FinderMenuIcon.swift */; };
 		EC8162583308E866B5D5DE5A /* ExportNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */; };
 		F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */; };
 		F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
+		F1C8CDFAC21075CADCBAB5EE /* CameraGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC31FDFDDD35884726F398 /* CameraGallery.swift */; };
 		F576973921F595B45D36CE59 /* ExportCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C79FB00A8120190E908580E /* ExportCompletionTests.swift */; };
 		F61C730E1A019D98B2061FB0 /* StudioPreviewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */; };
 		F7770AC1F7B4CA7CC1D939D8 /* PreviewPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */; };
 		F7CBEF0DF788803FC600F6CF /* ExportLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */; };
 		F88951CC17ADCB5CB566C198 /* PreviewPane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */; };
+		FF3DE2914B1D41EE6BAE40FD /* FinderImportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435204280E16508EBDD8A268 /* FinderImportRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,9 +128,27 @@
 			remoteGlobalIDString = D222447BE42B8FC18247275C;
 			remoteInfo = LogBatchCore;
 		};
+		F8045F58D916E83322821562 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 005EF9B52001D647D79E99A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B24D4CADBFDC75EFA5DD6E1D;
+			remoteInfo = LogLiftFinderExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		304D8B7D9C78B94B44C626B6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D20D0B84228E1257F65205CB /* LogLiftFinderExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D98A120E93BDC71519F36FF2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,46 +179,65 @@
 		11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductArtworkLibrary.swift; sourceTree = "<group>"; };
 		184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlaybackTests.swift; sourceTree = "<group>"; };
 		1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionWorkspace.swift; sourceTree = "<group>"; };
+		220C6C3820429B245949208D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2A1AC033862071223DF06AE4 /* FinderAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinderAppIcon.png; sourceTree = "<group>"; };
+		2D91F7723C6D8773633077F6 /* ExternalImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalImportTests.swift; sourceTree = "<group>"; };
 		3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchCoreTests.swift; sourceTree = "<group>"; };
 		346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportLayoutTests.swift; sourceTree = "<group>"; };
 		36AAA27E4018737149489958 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+		3C5E4F6D805F5B9CF8A59B95 /* FinderMenuIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderMenuIcon.swift; sourceTree = "<group>"; };
 		3E2DC041CA14EBBDB807E8CE /* ExportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportBar.swift; sourceTree = "<group>"; };
-		3EE15BA97E5250657331F0A0 /* SecurityScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScope.swift; sourceTree = "<group>"; };
 		3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDestinationTests.swift; sourceTree = "<group>"; };
+		435204280E16508EBDD8A268 /* FinderImportRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderImportRequest.swift; sourceTree = "<group>"; };
 		4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlayback.swift; sourceTree = "<group>"; };
 		4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportConfirmationTests.swift; sourceTree = "<group>"; };
 		4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTChoiceTitle.swift; sourceTree = "<group>"; };
 		4C79FB00A8120190E908580E /* ExportCompletionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportCompletionTests.swift; sourceTree = "<group>"; };
 		501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportNotifications.swift; sourceTree = "<group>"; };
 		525D49E2772A9FA1C56345D4 /* VideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSource.swift; sourceTree = "<group>"; };
+		53FE5918A59A2785CECD0796 /* ImportAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAccessTests.swift; sourceTree = "<group>"; };
 		5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBatchCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9AF4B6178D25B44AFC6B64 /* LogLiftFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LogLiftFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePane.swift; sourceTree = "<group>"; };
 		6136C0CD4AC831CB22890C87 /* LogBatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchApp.swift; sourceTree = "<group>"; };
+		63170B70742243559EF2EDF0 /* VideoFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFiles.swift; sourceTree = "<group>"; };
 		6AF311E3E2CBBD0D6A365AF5 /* ProductImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProductImages; path = LogBatch/Resources/ProductImages; sourceTree = SOURCE_ROOT; };
 		6C88BB9F71DD038E9BA6D8DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D861513686DC264D403BF1A /* GalleryInitialFocus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryInitialFocus.swift; sourceTree = "<group>"; };
 		75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchStoreTests.swift; sourceTree = "<group>"; };
 		7874950AF795DD2D2786BF43 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7A61023F73360742490EC72A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrderTests.swift; sourceTree = "<group>"; };
 		81AC31FDFDDD35884726F398 /* CameraGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGallery.swift; sourceTree = "<group>"; };
+		857C05902CFB8300E43467C1 /* FinderImportSelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderImportSelectionTests.swift; sourceTree = "<group>"; };
 		89FD455B5743BFA39F22D4ED /* BatchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchStore.swift; sourceTree = "<group>"; };
 		927D10C798D292B6CDC33A92 /* LogBatchError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogBatchError.swift; sourceTree = "<group>"; };
+		97D7E3826B9167536B585FA1 /* SecurityScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityScope.swift; sourceTree = "<group>"; };
 		9C7ECA6FBCE5F65E92BFA74D /* PreviewPane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPane.swift; sourceTree = "<group>"; };
+		9F445D831AFAFC3D7FF30F63 /* FinderSync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FinderSync.framework; path = System/Library/Frameworks/FinderSync.framework; sourceTree = SDKROOT; };
 		B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductArtworkTests.swift; sourceTree = "<group>"; };
 		B8C5B85A27D83BE045BB4E44 /* CameraArtwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraArtwork.swift; sourceTree = "<group>"; };
 		BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraOrderStore.swift; sourceTree = "<group>"; };
+		BC9B2C86A1E957D60A526183 /* FinderImportRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderImportRequestTests.swift; sourceTree = "<group>"; };
 		BE3A9B5EED037D34A2122F46 /* LogBatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogBatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1146D9DBB2D8041DD9583D1 /* LUTInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LUTInspector.swift; sourceTree = "<group>"; };
 		C321FE953F9E6BA11256C591 /* VideoExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoExporter.swift; sourceTree = "<group>"; };
 		D037D4140976C95373A4D0D3 /* CameraCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCategory.swift; sourceTree = "<group>"; };
+		DA88CF1FFA93255ECAD33779 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		DBDA01A8013594C732656E63 /* DJI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DJI; path = LogBatch/Resources/DJI; sourceTree = SOURCE_ROOT; };
 		DC2FB433FF57206ACBB8525E /* VideoPreviewRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRenderer.swift; sourceTree = "<group>"; };
+		DED0021DF6501C09DE72B757 /* CameraGalleryFocusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraGalleryFocusTests.swift; sourceTree = "<group>"; };
 		E2D80433856C19C173897DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E751C260D0C5B2896DFC1489 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
 		E7B214821B7BFE75C59E6C19 /* ColorPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPipeline.swift; sourceTree = "<group>"; };
+		E8B64DEE3A2695A29CACEF80 /* FinderMenuIconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderMenuIconTests.swift; sourceTree = "<group>"; };
+		EB08B63830B27CDC75508615 /* ContainingApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainingApplication.swift; sourceTree = "<group>"; };
 		EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewOrientationTests.swift; sourceTree = "<group>"; };
 		F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPlaybackControls.swift; sourceTree = "<group>"; };
 		F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipMetadata.swift; sourceTree = "<group>"; };
 		F346ABB98B9CD107E5D80259 /* CubeLUT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeLUT.swift; sourceTree = "<group>"; };
+		FACA6E13541D59CC4A91406B /* ImportAccessStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAccessStore.swift; sourceTree = "<group>"; };
+		FB923F950ECFE1CAEF616139 /* FinderCallbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderCallbackTests.swift; sourceTree = "<group>"; };
 		FC1C10371648A348BC894696 /* ExportDestinationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportDestinationStore.swift; sourceTree = "<group>"; };
 		FF60089E9F5346646B041D5E /* ClipMetadataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipMetadataTests.swift; sourceTree = "<group>"; };
 		FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudioPreviewOptions.swift; sourceTree = "<group>"; };
@@ -180,6 +250,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				63ECCDDCCA146BB1B075C9B4 /* LogBatchCore.framework in Frameworks */,
+				4F57F9957A3974DFCEC4F067 /* FinderSync.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEF82BD43F871C0FA45A2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44C9E84500C64663B3E96276 /* FinderSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CB4E506DB218E58FEDECE8F /* LogBatchCore.framework in Frameworks */,
+				45D956D94E878045C0E5996D /* FinderSync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,12 +278,30 @@
 			isa = PBXGroup;
 			children = (
 				F32C7B79D9B8CFC0485BDCB6 /* ClipMetadata.swift */,
+				6D861513686DC264D403BF1A /* GalleryInitialFocus.swift */,
 				4C424A240D614F0575DBCF04 /* LUTChoiceTitle.swift */,
-				3EE15BA97E5250657331F0A0 /* SecurityScope.swift */,
 				05D953480C6A0955A5AEDA35 /* StudioMotion.swift */,
 				FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		1DCBEC577B30335ED7E6A7BB /* FinderExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3C5E4F6D805F5B9CF8A59B95 /* FinderMenuIcon.swift */,
+				E751C260D0C5B2896DFC1489 /* FinderSync.swift */,
+				BADB555B6B284853B27EB788 /* Resources */,
+			);
+			path = FinderExtension;
+			sourceTree = "<group>";
+		};
+		24FF35DB1C0B1CF8A86A88CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F445D831AFAFC3D7FF30F63 /* FinderSync.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		295894274010CC6C32E8FDC4 /* Models */ = {
@@ -236,6 +334,7 @@
 				BE3A9B5EED037D34A2122F46 /* LogBatch.app */,
 				FFAF2C0AEDFEC62AB9B35296 /* LogBatchCore.framework */,
 				5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */,
+				5C9AF4B6178D25B44AFC6B64 /* LogLiftFinderExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -255,8 +354,11 @@
 				DBDA01A8013594C732656E63 /* DJI */,
 				6AF311E3E2CBBD0D6A365AF5 /* ProductImages */,
 				BA270F7F81D4B8ADDB662C6A /* Core */,
+				1DCBEC577B30335ED7E6A7BB /* FinderExtension */,
 				DB5C73A6FB0DF2348F66D24C /* LogBatch */,
+				F7E47990F849B501501F3802 /* Shared */,
 				F6BE123DF4AF58E7D6FA7673 /* Tests */,
+				24FF35DB1C0B1CF8A86A88CA /* Frameworks */,
 				7BE931966D21512ABD771142 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -323,15 +425,26 @@
 				89FD455B5743BFA39F22D4ED /* BatchStore.swift */,
 				BC4DCD9884182749BFDA07C4 /* CameraOrderStore.swift */,
 				FC1C10371648A348BC894696 /* ExportDestinationStore.swift */,
+				FACA6E13541D59CC4A91406B /* ImportAccessStore.swift */,
 				4570E5325545DDB0DA1759FD /* PreviewPlayback.swift */,
 				11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
 		};
+		BADB555B6B284853B27EB788 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A1AC033862071223DF06AE4 /* FinderAppIcon.png */,
+				DA88CF1FFA93255ECAD33779 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		DB5C73A6FB0DF2348F66D24C /* LogBatch */ = {
 			isa = PBXGroup;
 			children = (
+				220C6C3820429B245949208D /* Info.plist */,
 				41C09FD967405426D3A8AEE8 /* App */,
 				295894274010CC6C32E8FDC4 /* Models */,
 				8464E0EDBC974A3A927F828C /* Resources */,
@@ -347,18 +460,36 @@
 			isa = PBXGroup;
 			children = (
 				75D191D1D233F2F5311198C8 /* BatchStoreTests.swift */,
+				DED0021DF6501C09DE72B757 /* CameraGalleryFocusTests.swift */,
 				7F94B254968C02A0F65C97CE /* CameraOrderTests.swift */,
 				FF60089E9F5346646B041D5E /* ClipMetadataTests.swift */,
 				4C79FB00A8120190E908580E /* ExportCompletionTests.swift */,
 				4B28CF884BE0B2E1B4CE8C0B /* ExportConfirmationTests.swift */,
 				3F0A02D4E189CF59BBC682AB /* ExportDestinationTests.swift */,
 				346A7F70F1D93674296ADD5C /* ExportLayoutTests.swift */,
+				2D91F7723C6D8773633077F6 /* ExternalImportTests.swift */,
+				FB923F950ECFE1CAEF616139 /* FinderCallbackTests.swift */,
+				BC9B2C86A1E957D60A526183 /* FinderImportRequestTests.swift */,
+				857C05902CFB8300E43467C1 /* FinderImportSelectionTests.swift */,
+				E8B64DEE3A2695A29CACEF80 /* FinderMenuIconTests.swift */,
+				53FE5918A59A2785CECD0796 /* ImportAccessTests.swift */,
 				3324BB5A3E64C6404B99AAC0 /* LogBatchCoreTests.swift */,
 				EE6B3D4218E70B8C6CF6F01E /* PreviewOrientationTests.swift */,
 				184D9BA2E8F15697C5FE423E /* PreviewPlaybackTests.swift */,
 				B34B69B0EE4C7B4520317705 /* ProductArtworkTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		F7E47990F849B501501F3802 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EB08B63830B27CDC75508615 /* ContainingApplication.swift */,
+				435204280E16508EBDD8A268 /* FinderImportRequest.swift */,
+				97D7E3826B9167536B585FA1 /* SecurityScope.swift */,
+				63170B70742243559EF2EDF0 /* VideoFiles.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,12 +523,14 @@
 				1EA0E746E4A49CD42E750C43 /* Sources */,
 				CADF2CEAA1653BC07A0236D6 /* Resources */,
 				3ABE1E532D460CC4C851E73A /* Frameworks */,
+				304D8B7D9C78B94B44C626B6 /* Embed Foundation Extensions */,
 				D98A120E93BDC71519F36FF2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4EE8F44719486C6D24740BCB /* PBXTargetDependency */,
+				F10B56F9C88E2A395BF6FDB4 /* PBXTargetDependency */,
 			);
 			name = LogBatch;
 			packageProductDependencies = (
@@ -405,6 +538,25 @@
 			productName = LogBatch;
 			productReference = BE3A9B5EED037D34A2122F46 /* LogBatch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B24D4CADBFDC75EFA5DD6E1D /* LogLiftFinderExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FD043ADDFA7DA957FF42ABE /* Build configuration list for PBXNativeTarget "LogLiftFinderExtension" */;
+			buildPhases = (
+				A1F5598B7493D45C118BFE28 /* Sources */,
+				A34312852C68B78522F59221 /* Resources */,
+				1DEF82BD43F871C0FA45A2A1 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogLiftFinderExtension;
+			packageProductDependencies = (
+			);
+			productName = LogLiftFinderExtension;
+			productReference = 5C9AF4B6178D25B44AFC6B64 /* LogLiftFinderExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		D222447BE42B8FC18247275C /* LogBatchCore */ = {
 			isa = PBXNativeTarget;
@@ -454,6 +606,7 @@
 			targets = (
 				D222447BE42B8FC18247275C /* LogBatchCore */,
 				6D4253DB2FABD150A3BC05C2 /* LogBatch */,
+				B24D4CADBFDC75EFA5DD6E1D /* LogLiftFinderExtension */,
 				5EEC61A42B97B807A35E110C /* LogBatchCoreTests */,
 			);
 		};
@@ -474,7 +627,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EECAC4ED34B4999B3434412 /* Assets.xcassets in Resources */,
+				7A8FB920CBC79D2727555675 /* FinderAppIcon.png in Resources */,
 				44B7B93BC8C5CF187659E0E3 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34312852C68B78522F59221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF233F81276F5C48C41F4B4 /* FinderAppIcon.png in Resources */,
+				48706229D6AE14C7403FF689 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,11 +664,15 @@
 				5E6788D7354C061BEE844E34 /* CameraGallery.swift in Sources */,
 				299630FEA792A4585327C037 /* CameraOrderStore.swift in Sources */,
 				24F97A24466161B09332D66D /* ClipMetadata.swift in Sources */,
+				C0150FC757F7EB991510992F /* ContainingApplication.swift in Sources */,
 				054BDD46F5EA09EE2C6A0627 /* ContentView.swift in Sources */,
 				7FC1466FA9915B9507C142E5 /* ConversionWorkspace.swift in Sources */,
 				50672C616AAF83A9B93C0902 /* ExportBar.swift in Sources */,
 				AF1B46691DA3CC355B859B10 /* ExportDestinationStore.swift in Sources */,
 				7C931FBC28E70A4EBD5E936A /* ExportNotifications.swift in Sources */,
+				3170BEF439229B0DF40C0EF6 /* FinderImportRequest.swift in Sources */,
+				473DFBD2563BC0121D92A5EB /* GalleryInitialFocus.swift in Sources */,
+				9B436373E5F4A140A4F847AA /* ImportAccessStore.swift in Sources */,
 				CB1D4E5EE646BD22E02BA21A /* LUTChoiceTitle.swift in Sources */,
 				A3FB40E6C01F2FF464CC0C30 /* LUTInspector.swift in Sources */,
 				128D879FCA22E2A4F29C3D6B /* LogBatchApp.swift in Sources */,
@@ -514,9 +681,23 @@
 				F7770AC1F7B4CA7CC1D939D8 /* PreviewPlaybackControls.swift in Sources */,
 				048108B9E65B21C749FE9E38 /* ProductArtworkLibrary.swift in Sources */,
 				E81C221D5380803F4B4914D0 /* QueuePane.swift in Sources */,
-				20DEE362F296AAF06F4947DD /* SecurityScope.swift in Sources */,
+				AB215D68F7058EE5A36E6FC2 /* SecurityScope.swift in Sources */,
 				412F7B4D0D87000EDE896821 /* StudioMotion.swift in Sources */,
 				F61C730E1A019D98B2061FB0 /* StudioPreviewOptions.swift in Sources */,
+				978C8AF33013FAF1AE5D36AC /* VideoFiles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F5598B7493D45C118BFE28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2517E1D14000E90614A26CE /* ContainingApplication.swift in Sources */,
+				FF3DE2914B1D41EE6BAE40FD /* FinderImportRequest.swift in Sources */,
+				EA4DCEEE889F81D56DB64B72 /* FinderMenuIcon.swift in Sources */,
+				BCE31DF1D14C1A0EEC71B19E /* FinderSync.swift in Sources */,
+				8B4F3B2A476D1952F71B6054 /* SecurityScope.swift in Sources */,
+				8AA14400AAE9C534524C0E01 /* VideoFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,10 +724,13 @@
 				A2793F7DAD94975A0F701B17 /* BatchStoreTests.swift in Sources */,
 				B9ECAAF7B50414F0ACDFBF31 /* CameraArtwork.swift in Sources */,
 				BA9DA8B972ECD401C6D3CAAB /* CameraCategory.swift in Sources */,
+				F1C8CDFAC21075CADCBAB5EE /* CameraGallery.swift in Sources */,
+				CC9B410CB410BD4053E5AC64 /* CameraGalleryFocusTests.swift in Sources */,
 				DC9295BFD4CD2E6FACDB1E7A /* CameraOrderStore.swift in Sources */,
 				37FC31B0B394216829BCF8F2 /* CameraOrderTests.swift in Sources */,
 				89EB6EA3304ADC8F2AB1E778 /* ClipMetadata.swift in Sources */,
 				272F5BAEB7641543CD1787CF /* ClipMetadataTests.swift in Sources */,
+				1538ECB29114ECB1D6B1CC9F /* ContainingApplication.swift in Sources */,
 				F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */,
 				928CB10782B440BABD249823 /* ExportBar.swift in Sources */,
 				F576973921F595B45D36CE59 /* ExportCompletionTests.swift in Sources */,
@@ -555,6 +739,17 @@
 				8389445E5B9F11606766F98F /* ExportDestinationTests.swift in Sources */,
 				F7CBEF0DF788803FC600F6CF /* ExportLayoutTests.swift in Sources */,
 				EC8162583308E866B5D5DE5A /* ExportNotifications.swift in Sources */,
+				3B81EF21FE763F4B77FF6BC6 /* ExternalImportTests.swift in Sources */,
+				4E2AB2D4716FF19222333E74 /* FinderCallbackTests.swift in Sources */,
+				19009F57E976EB332B17BA5D /* FinderImportRequest.swift in Sources */,
+				D8408066A157180ED0E33AC0 /* FinderImportRequestTests.swift in Sources */,
+				E5231D76184DA3E92D8DCC41 /* FinderImportSelectionTests.swift in Sources */,
+				60F0BB57127D0598D302F7DC /* FinderMenuIcon.swift in Sources */,
+				6C38276C8FFFF933FAA7D63F /* FinderMenuIconTests.swift in Sources */,
+				BAE58DBA08B80F93F0907265 /* FinderSync.swift in Sources */,
+				39F34DEB9A778B1688F311B6 /* GalleryInitialFocus.swift in Sources */,
+				3C23BA3C50E3524DDF2D50DA /* ImportAccessStore.swift in Sources */,
+				71B7E7CFFDA8A6556BE762F9 /* ImportAccessTests.swift in Sources */,
 				952D9CC37B4BD8E34E61CC86 /* LUTChoiceTitle.swift in Sources */,
 				04D7962C1CC45781A96108C1 /* LUTInspector.swift in Sources */,
 				4B9B2BBAD394DBE37FAA7D4E /* LogBatchCoreTests.swift in Sources */,
@@ -566,9 +761,10 @@
 				F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */,
 				050179CFC2C6C8F4F9D0DA05 /* ProductArtworkTests.swift in Sources */,
 				33124DD7D11FBCA921EEA663 /* QueuePane.swift in Sources */,
-				B4E9C4D48D93382D604EE32C /* SecurityScope.swift in Sources */,
+				5E8D23728579A4FAFC0FD3D4 /* SecurityScope.swift in Sources */,
 				95D4F021FC01DCFD8460CB86 /* StudioMotion.swift in Sources */,
 				0C687F9ED3D8BE124B3F9782 /* StudioPreviewOptions.swift in Sources */,
+				73E4F9A9D40021A84B280016 /* VideoFiles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,9 +781,35 @@
 			target = D222447BE42B8FC18247275C /* LogBatchCore */;
 			targetProxy = ADFC4BCB050188DFC6D505D4 /* PBXContainerItemProxy */;
 		};
+		F10B56F9C88E2A395BF6FDB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B24D4CADBFDC75EFA5DD6E1D /* LogLiftFinderExtension */;
+			targetProxy = F8045F58D916E83322821562 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1C8F4A34C960679F7F09949D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/FinderExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				INFOPLIST_FILE = FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.app.FinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
 		4A30E85A59EB6A2D4F4B4A0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,6 +916,27 @@
 			};
 			name = Debug;
 		};
+		71F4DE9618B2D4F005DD223F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = FinderExtension/FinderExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				INFOPLIST_FILE = FinderExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.logbatch.app.FinderExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
 		831EDC419A08320EF9242239 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -719,6 +962,7 @@
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				EXECUTABLE_NAME = LogLift;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogBatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "LogLift for DJI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -741,6 +985,7 @@
 				ENABLE_USER_SELECTED_FILES = readwrite;
 				EXECUTABLE_NAME = LogLift;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LogBatch/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "LogLift for DJI";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.video";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -845,6 +1090,15 @@
 			buildConfigurations = (
 				FE980E452E089B0275CA8944 /* Debug */,
 				66FF673B1797782D4AAD68C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5FD043ADDFA7DA957FF42ABE /* Build configuration list for PBXNativeTarget "LogLiftFinderExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71F4DE9618B2D4F005DD223F /* Debug */,
+				1C8F4A34C960679F7F09949D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

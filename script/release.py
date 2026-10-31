@@ -130,9 +130,18 @@ def signing_identity(commands):
 def verify_code(commands, app, prefix):
     commands.run(["codesign", "--verify", "--deep", "--strict", "--all-architectures", "--verbose=4", app], prefix + "-signature")
     records = []
+    extension = app / "Contents/PlugIns/LogLiftFinderExtension.appex"
+    approved_entitlements = {
+        "app": {"com.apple.security.app-sandbox": True,
+                "com.apple.security.files.user-selected.read-write": True},
+        "framework": {},
+        "finder-extension": {"com.apple.security.app-sandbox": True,
+                             "com.apple.security.files.user-selected.read-only": True},
+    }
     for code, label, binary in ((app, "app", app / "Contents/MacOS/LogLift"),
                                (app / "Contents/Frameworks/LogBatchCore.framework", "framework",
-                                app / "Contents/Frameworks/LogBatchCore.framework/Versions/A/LogBatchCore")):
+                                app / "Contents/Frameworks/LogBatchCore.framework/Versions/A/LogBatchCore"),
+                               (extension, "finder-extension", extension / "Contents/MacOS/LogLiftFinderExtension")):
         details = commands.run(["codesign", "-dvvv", code], prefix + "-" + label + "-details").stderr.decode()
         if ("Authority=Developer ID Application:" not in details or
                 f"TeamIdentifier={os.environ['APPLE_TEAM_ID']}" not in details or
@@ -140,9 +149,7 @@ def verify_code(commands, app, prefix):
             raise ReleaseError("Invalid distribution signature, team, runtime, or timestamp.")
         data = commands.run(["codesign", "-d", "--entitlements", ":-", code], prefix + "-" + label + "-entitlements").stdout
         entitlements = plistlib.loads(data) if data.strip() else {}
-        expected = {"com.apple.security.app-sandbox": True,
-                    "com.apple.security.files.user-selected.read-write": True} if label == "app" else {}
-        if entitlements != expected:
+        if entitlements != approved_entitlements[label]:
             raise ReleaseError("The final entitlements do not match the approved sandbox boundary.")
         architectures = commands.run(["lipo", "-archs", binary], prefix + "-" + label + "-architectures").stdout.decode().split()
         if set(architectures) != {"arm64", "x86_64"}:

@@ -30,13 +30,6 @@ struct CameraGallery: View {
                             .font(.system(size: 15)).foregroundStyle(.secondary)
                     }
                     Spacer()
-                    HStack(spacing: 9) {
-                        Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
-                        TextField("Find your camera", text: $query).textFieldStyle(.plain)
-                            .accessibilityIdentifier("gallery-search")
-                    }
-                    .padding(12).frame(width: 220)
-                    .background(.primary.opacity(0.045), in: RoundedRectangle(cornerRadius: 13))
                 }
                 HStack(spacing: 6) {
                     ForEach(CameraCategory.allCases) { item in
@@ -63,6 +56,13 @@ struct CameraGallery: View {
                     }
                     Spacer()
                     if !artwork.isReady { ProgressView().controlSize(.small).accessibilityLabel("Loading cameras…") }
+                    HStack(spacing: 9) {
+                        Image(systemName: "magnifyingglass").foregroundStyle(.secondary)
+                        TextField("Find your camera", text: $query).textFieldStyle(.plain)
+                            .accessibilityIdentifier("gallery-search")
+                    }
+                    .padding(12).frame(width: 220)
+                    .background(.primary.opacity(0.045), in: RoundedRectangle(cornerRadius: 13))
                 }
             }
             .padding(.bottom, 24)
@@ -115,6 +115,7 @@ struct CameraGallery: View {
             .zIndex(1)
         }
         .padding(.horizontal, 40).padding(.top, 18).padding(.bottom, 24)
+        .background(GalleryInitialFocus())
     }
 }
 

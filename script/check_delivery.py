@@ -17,7 +17,8 @@ assert "** TEST SUCCEEDED **" in test_log
 test_counts = [int(value) for value in re.findall(r"Executed (\d+) tests, with 0 failures", test_log)]
 assert test_counts and max(test_counts) >= 19
 assert "** BUILD SUCCEEDED **" in (evidence / "build.log").read_text()
-for relative in ("Core/Resources/Localizable.xcstrings", "LogBatch/Resources/Localizable.xcstrings"):
+for relative in ("Core/Resources/Localizable.xcstrings", "LogBatch/Resources/Localizable.xcstrings",
+                 "FinderExtension/Resources/Localizable.xcstrings"):
     catalog = json.loads((ROOT / relative).read_text())
     for key, entry in catalog["strings"].items():
         for locale in ("en", "zh-Hans", "ja", "ko"):

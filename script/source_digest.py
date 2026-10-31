@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def snapshot():
     paths = []
-    for name in ("Core", "LogBatch", "Tests", "script", "vendor", "LogBatch.xcodeproj", ".codex"):
+    for name in ("Core", "LogBatch", "FinderExtension", "Shared", "Tests", "script", "vendor", "LogBatch.xcodeproj", ".codex"):
         paths.extend(path for path in (ROOT / name).rglob("*") if path.is_file()
                      and "__pycache__" not in path.parts and "xcuserdata" not in path.parts)
     paths.extend(ROOT / name for name in ("project.yml", "AGENTS.md", ".gitignore", "README.md"))

@@ -2,6 +2,7 @@
 import importlib.util
 import json
 import os
+import plistlib
 from pathlib import Path
 import subprocess
 import tempfile
@@ -138,6 +139,71 @@ class ReleaseTests(unittest.TestCase):
                 with release.signing_identity(commands):
                     self.fail("Failed signing setup must not yield credentials")
             self.assertEqual(names[-2:], ["restore-keychain-search", "delete-signing-keychain"])
+
+
+class ExtensionReleaseTests(unittest.TestCase):
+    details = "Authority=Developer ID Application: Test\nTeamIdentifier=TEAMID1234\nTimestamp=now\nflags=runtime\n"
+    readonly = {"com.apple.security.app-sandbox": True,
+                "com.apple.security.files.user-selected.read-only": True}
+
+    def inspect(self, details=None, entitlements=None, architectures="arm64 x86_64", unsigned=False):
+        commands = Mock()
+
+        def run(args, name, required=True):
+            extension = "-finder-extension-" in name
+            if extension and unsigned:
+                raise release.ReleaseError("Finder extension is not signed")
+            stdout, stderr = b"", b""
+            if name.endswith("-details"):
+                stderr = (details if extension and details is not None else self.details).encode()
+            elif name.endswith("-entitlements"):
+                expected = {"com.apple.security.app-sandbox": True,
+                            "com.apple.security.files.user-selected.read-write": True} if "-app-" in name else {}
+                if extension:
+                    expected = self.readonly if entitlements is None else entitlements
+                stdout = plistlib.dumps(expected)
+            elif name.endswith("-architectures"):
+                stdout = (architectures if extension else "arm64 x86_64").encode()
+            return subprocess.CompletedProcess(args, 0, stdout, stderr)
+
+        commands.run.side_effect = run
+        with patch.dict(os.environ, {"APPLE_TEAM_ID": "TEAMID1234"}):
+            records = release.verify_code(commands, Path("App.app"), "exported")
+        return commands, records
+
+    def test_extension_is_included_in_distribution_security_records(self):
+        commands, records = self.inspect()
+        self.assertEqual([r["code"] for r in records], ["app", "framework", "finder-extension"])
+        self.assertEqual(records[-1]["entitlements"], self.readonly)
+        binaries = [call.args[0][-1] for call in commands.run.call_args_list
+                    if call.args[1].endswith("-architectures")]
+        self.assertIn(Path("App.app/Contents/PlugIns/LogLiftFinderExtension.appex/Contents/MacOS/LogLiftFinderExtension"), binaries)
+        self.assertEqual(commands.run.call_args.args[1], "exported-resources")
+
+    def test_missing_or_unsigned_extension_stops_packaging(self):
+        with self.assertRaisesRegex(release.ReleaseError, "not signed"):
+            self.inspect(unsigned=True)
+
+    def test_extension_requires_distribution_signature_team_runtime_and_timestamp(self):
+        for invalid in [self.details.replace("Developer ID Application:", "Apple Development:"),
+                        self.details.replace("TEAMID1234", "OTHERTEAM"),
+                        self.details.replace("Timestamp=now", ""),
+                        self.details.replace("runtime", "")]:
+            with self.subTest(details=invalid), self.assertRaisesRegex(release.ReleaseError, "signature"):
+                self.inspect(details=invalid)
+
+    def test_extension_permissions_cannot_expand_or_disappear(self):
+        for invalid in [{}, {"com.apple.security.app-sandbox": True},
+                        {"com.apple.security.app-sandbox": True,
+                         "com.apple.security.files.user-selected.read-write": True},
+                        dict(self.readonly, **{"com.apple.security.files.downloads.read-write": True})]:
+            with self.subTest(entitlements=invalid), self.assertRaisesRegex(release.ReleaseError, "sandbox"):
+                self.inspect(entitlements=invalid)
+
+    def test_extension_must_include_both_distribution_architectures(self):
+        for invalid in ["arm64", "x86_64", "arm64 x86_64 i386"]:
+            with self.subTest(architectures=invalid), self.assertRaisesRegex(release.ReleaseError, "arm64"):
+                self.inspect(architectures=invalid)
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ A native macOS app for batch conversion of DJI Log footage to Rec.709. Video pro
 - Apply supported official 3D technical Log-to-Rec.709 LUTs.
 - Compare original and converted video with synchronized playback.
 - Import multiple clips and export HEVC Main10 video.
+- Select videos in Finder and use **Import into LogLift** to open the app and import the selection.
 - Keep source resolution, timestamps, display transform, and supported compressed audio.
 - Remember the export folder and report batch completion.
 - Use English, Simplified Chinese, Japanese, or Korean.
@@ -42,6 +43,8 @@ To build and open the app:
 ```
 
 The build script disables code signing for local development. Version tags trigger Developer ID signing, notarization, and GitHub preview releases. See [Tag releases](docs/RELEASING.md) for setup, version rules, and recovery. App Store distribution is not configured.
+
+Finder integration requires the embedded Finder extension to be enabled in System Settings. The app menu includes **Finder Extension…** to open its management interface. On the first import from a folder, allow read-only access in the native folder panel. LogLift remembers this permission for later imports from that folder, including after restarting the app. Finder selections can include multiple supported videos; other files are ignored.
 
 ## Verify
 

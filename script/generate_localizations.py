@@ -5,6 +5,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 APP = {
+    "Allow access to the folder that contains these videos. LogLift remembers read-only access for future imports.": ("请选择包含这些视频的文件夹并授权访问。LogLift 会记住只读权限，方便下次导入。", "動画を含むフォルダへのアクセスを許可してください。LogLift は次回の読み込み用に読み取り専用アクセスを保存します。", "동영상이 있는 폴더에 대한 접근을 허용하세요. LogLift는 다음 가져오기를 위해 읽기 전용 접근 권한을 저장합니다."),
+    "Allow Folder": ("允许访问文件夹", "フォルダを許可", "폴더 허용"),
+    "The selected folder does not contain the requested videos.": ("所选文件夹不包含待导入的视频。", "選択したフォルダに読み込む動画がありません。", "선택한 폴더에 가져올 동영상이 없습니다."),
+    "The Finder import request is invalid. Try again from Finder.": ("Finder 导入请求无效，请从 Finder 重试。", "Finder の読み込み要求が無効です。Finder からやり直してください。", "Finder 가져오기 요청이 잘못되었습니다. Finder에서 다시 시도하세요."),
+    "Finder Extension…": ("Finder 扩展…", "Finder 拡張機能…", "Finder 확장 프로그램…"),
     "The export folder could not be saved. Choose another folder.": ("无法保存导出目录，请选择其他文件夹。", "書き出し先を保存できません。別のフォルダを選択してください。", "내보내기 폴더를 저장할 수 없습니다. 다른 폴더를 선택하세요."),
     "Play": ("播放", "再生", "재생"),
     "Pause": ("暂停", "一時停止", "일시 정지"),
@@ -108,6 +113,12 @@ CORE = {
     "An output file already exists. Choose another folder or rename the source.": ("输出文件已存在。请选择其他文件夹或重命名源文件。", "出力ファイルが存在します。別のフォルダを選ぶか、元のファイル名を変更してください。", "출력 파일이 이미 존재합니다. 다른 폴더를 선택하거나 원본 이름을 변경하세요."),
 }
 
+FINDER = {
+    "The Finder import request is invalid. Try again from Finder.": ("Finder 导入请求无效，请从 Finder 重试。", "Finder の読み込み要求が無効です。Finder からやり直してください。", "Finder 가져오기 요청이 잘못되었습니다. Finder에서 다시 시도하세요."),
+    "Import into LogLift": ("导入 LogLift", "LogLift に読み込む", "LogLift로 가져오기"),
+    "LogLift could not be opened.": ("无法打开 LogLift。", "LogLift を開けませんでした。", "LogLift를 열 수 없습니다."),
+}
+
 
 def write(path, table):
     strings = {}
@@ -123,4 +134,5 @@ def write(path, table):
 if __name__ == "__main__":
     write(ROOT / "LogBatch/Resources/Localizable.xcstrings", APP)
     write(ROOT / "Core/Resources/Localizable.xcstrings", CORE)
+    write(ROOT / "FinderExtension/Resources/Localizable.xcstrings", FINDER)
 

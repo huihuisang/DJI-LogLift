@@ -29,6 +29,7 @@ targets:
     type: application
     platform: macOS
     sources:
+      - path: Shared
       - path: LogBatch
         excludes: [Resources/DJI, Resources/ProductImages]
       - path: LogBatch/Resources/ProductImages
@@ -36,6 +37,18 @@ targets:
         buildPhase: resources
     dependencies:
       - target: LogBatchCore
+      - target: LogLiftFinderExtension
+        embed: true
+      - sdk: FinderSync.framework
+    info:
+      path: LogBatch/Info.plist
+      properties:
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        CFBundleURLTypes:
+          - CFBundleURLName: dev.logbatch.import
+            CFBundleTypeRole: Viewer
+            CFBundleURLSchemes: [loglift]
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.app
@@ -48,14 +61,51 @@ targets:
         SWIFT_EMIT_LOC_STRINGS: YES
         ENABLE_APP_SANDBOX: YES
         ENABLE_USER_SELECTED_FILES: readwrite
+  LogLiftFinderExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: FinderExtension
+        excludes: [Info.plist, FinderExtension.entitlements]
+      - path: Shared
+    dependencies:
+      - sdk: FinderSync.framework
+    info:
+      path: FinderExtension/Info.plist
+      properties:
+        CFBundleDisplayName: LogLift Finder Extension
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.FinderSync
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).FinderSync
+    entitlements:
+      path: FinderExtension/FinderExtension.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.app.FinderExtension
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        ENABLE_APP_SANDBOX: YES
+        ENABLE_USER_SELECTED_FILES: readonly
+        SWIFT_EMIT_LOC_STRINGS: YES
   LogBatchCoreTests:
     type: bundle.unit-test
     platform: macOS
     sources:
       - path: Tests
         excludes: [__pycache__, '*.py', '*.pyc']
+      - path: Shared
+      - path: FinderExtension/FinderSync.swift
+      - path: FinderExtension/FinderMenuIcon.swift
+      - path: FinderExtension/Resources/FinderAppIcon.png
+        buildPhase: resources
       - path: LogBatch/Stores/BatchStore.swift
       - path: LogBatch/Stores/ExportDestinationStore.swift
+      - path: LogBatch/Stores/ImportAccessStore.swift
       - path: LogBatch/Stores/PreviewPlayback.swift
       - path: LogBatch/Services/ExportNotifications.swift
       - path: LogBatch/Stores/ProductArtworkLibrary.swift
@@ -63,7 +113,7 @@ targets:
       - path: LogBatch/Models/CameraCategory.swift
       - path: LogBatch/Support/LUTChoiceTitle.swift
       - path: LogBatch/Support/ClipMetadata.swift
-      - path: LogBatch/Support/SecurityScope.swift
+      - path: LogBatch/Support/GalleryInitialFocus.swift
       - path: LogBatch/Support/StudioMotion.swift
       - path: LogBatch/Support/StudioPreviewOptions.swift
       - path: LogBatch/Views/ConversionWorkspace.swift
@@ -73,10 +123,12 @@ targets:
       - path: LogBatch/Views/PreviewPlaybackControls.swift
       - path: LogBatch/Views/QueuePane.swift
       - path: LogBatch/Views/CameraArtwork.swift
+      - path: LogBatch/Views/CameraGallery.swift
       - path: LogBatch/Resources/Assets.xcassets
       - path: LogBatch/Resources/Localizable.xcstrings
     dependencies:
       - target: LogBatchCore
+      - sdk: FinderSync.framework
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.logbatch.tests

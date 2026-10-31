@@ -1,3 +1,4 @@
+import FinderSync
 import SwiftUI
 
 @main
@@ -13,6 +14,11 @@ struct LogBatchApp: App {
         }
         .defaultSize(width: 1280, height: 900)
         .windowStyle(.hiddenTitleBar)
+        .commands {
+            CommandGroup(after: .appSettings) {
+                Button("Finder Extension…") { FIFinderSyncController.showExtensionManagementInterface() }
+            }
+        }
     }
 }
 

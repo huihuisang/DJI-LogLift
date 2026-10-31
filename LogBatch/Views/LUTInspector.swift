@@ -6,11 +6,7 @@ struct LUTInspector: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            HStack {
-                Text("Color Conversion").font(.system(size: 12, weight: .semibold))
-                Spacer()
-                Image(systemName: "slider.horizontal.3").font(.system(size: 12)).foregroundStyle(.secondary)
-            }
+            Text("Color Conversion").font(.system(size: 12, weight: .semibold))
             if store.availableLUTs.count > 1 {
                 Picker("Conversion LUT", selection: $store.selectedLUTID) {
                     ForEach(store.availableLUTs) { lut in

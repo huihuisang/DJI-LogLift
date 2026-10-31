@@ -262,6 +262,64 @@
         }
       }
     },
+    "Allow Folder": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Folder"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许访问文件夹"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォルダを許可"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "폴더 허용"
+          }
+        }
+      }
+    },
+    "Allow access to the folder that contains these videos. LogLift remembers read-only access for future imports.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow access to the folder that contains these videos. LogLift remembers read-only access for future imports."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请选择包含这些视频的文件夹并授权访问。LogLift 会记住只读权限，方便下次导入。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動画を含むフォルダへのアクセスを許可してください。LogLift は次回の読み込み用に読み取り専用アクセスを保存します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동영상이 있는 폴더에 대한 접근을 허용하세요. LogLift는 다음 가져오기를 위해 읽기 전용 접근 권한을 저장합니다."
+          }
+        }
+      }
+    },
     "Archived · Conversion unavailable": {
       "extractionState": "manual",
       "localizations": {
@@ -1302,6 +1360,35 @@
           "stringUnit": {
             "state": "translated",
             "value": "카메라 찾기"
+          }
+        }
+      }
+    },
+    "Finder Extension…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder Extension…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 扩展…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 拡張機能…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 확장 프로그램…"
           }
         }
       }
@@ -2350,6 +2437,35 @@
         }
       }
     },
+    "The Finder import request is invalid. Try again from Finder.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Finder import request is invalid. Try again from Finder."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 导入请求无效，请从 Finder 重试。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder の読み込み要求が無効です。Finder からやり直してください。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder 가져오기 요청이 잘못되었습니다. Finder에서 다시 시도하세요."
+          }
+        }
+      }
+    },
     "The export folder could not be saved. Choose another folder.": {
       "extractionState": "manual",
       "localizations": {
@@ -2375,6 +2491,35 @@
           "stringUnit": {
             "state": "translated",
             "value": "내보내기 폴더를 저장할 수 없습니다. 다른 폴더를 선택하세요."
+          }
+        }
+      }
+    },
+    "The selected folder does not contain the requested videos.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The selected folder does not contain the requested videos."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所选文件夹不包含待导入的视频。"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選択したフォルダに読み込む動画がありません。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 폴더에 가져올 동영상이 없습니다."
           }
         }
       }

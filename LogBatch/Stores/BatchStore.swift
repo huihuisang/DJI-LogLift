@@ -48,22 +48,34 @@ final class BatchStore {
     var isLoadingPreview = false
     private(set) var showsExportSuccess = false
     @ObservationIgnored private var scopes = [SecurityScope]()
+    private struct ImportRequest {
+        let roots: [URL]
+        let needsFolderAccess: Bool
+    }
+    @ObservationIgnored private var pendingImports = [ImportRequest]()
     @ObservationIgnored private var worker: Task<Void, Never>?
     @ObservationIgnored private let defaults: UserDefaults
     @ObservationIgnored private let destinations: ExportDestinationStore
     @ObservationIgnored private let outputFolderChooser: @MainActor (URL?) -> URL?
+    @ObservationIgnored private let importAccess: ImportAccessStore
+    @ObservationIgnored private let importFolderChooser: @MainActor (URL) -> URL?
     @ObservationIgnored private var isChoosingOutput = false
     @ObservationIgnored private var isAwaitingExportConfirmation = false
     @ObservationIgnored private let notifications: (any ExportNotifying)?
     @ObservationIgnored private var successResetTask: Task<Void, Never>?
-    var isProcessing = false
+    var isProcessing = false {
+        didSet { if !isProcessing { importNextBatch() } }
+    }
     var isImporting = false
 
     init(defaults: UserDefaults = .standard, notifications: (any ExportNotifying)? = nil,
-         outputFolderChooser: (@MainActor (URL?) -> URL?)? = nil) {
+         outputFolderChooser: (@MainActor (URL?) -> URL?)? = nil,
+         importFolderChooser: (@MainActor (URL) -> URL?)? = nil) {
         self.defaults = defaults
         destinations = ExportDestinationStore(defaults: defaults)
         self.outputFolderChooser = outputFolderChooser ?? Self.presentOutputFolder
+        importAccess = ImportAccessStore(defaults: defaults)
+        self.importFolderChooser = importFolderChooser ?? Self.presentImportFolder
         self.notifications = notifications
         do {
             let catalog = try LUTCatalog.load()
@@ -102,12 +114,45 @@ final class BatchStore {
     }
 
     func add(_ roots: [URL]) {
-        guard !isProcessing && !isImporting else { return }
+        enqueueImport(roots, needsFolderAccess: false)
+    }
+
+    func importFromFinder(_ files: [URL]) {
+        let files = VideoFiles.requestedSelection(from: files)
+        guard !files.isEmpty else {
+            message = String(localized: "No supported videos were found. Choose MOV, MP4, or M4V files.")
+            return
+        }
+        enqueueImport(files, needsFolderAccess: true)
+    }
+
+    private func enqueueImport(_ roots: [URL], needsFolderAccess: Bool) {
+        let roots = roots.filter(\.isFileURL)
+        guard !roots.isEmpty else { return }
+        scopes.append(contentsOf: roots.map(SecurityScope.init))
+        pendingImports.append(ImportRequest(roots: roots, needsFolderAccess: needsFolderAccess))
+        importNextBatch()
+    }
+
+    private func importNextBatch() {
+        guard !isProcessing && !isImporting && !pendingImports.isEmpty else { return }
+        let request = pendingImports.removeFirst()
         resetExportSuccess()
         isImporting = true
-        scopes.append(contentsOf: roots.map(SecurityScope.init))
         Task {
-            defer { isImporting = false }
+            defer {
+                isImporting = false
+                importNextBatch()
+            }
+            if request.needsFolderAccess {
+                do {
+                    guard try importAccess.authorize(request.roots, chooseFolder: importFolderChooser) else { return }
+                } catch {
+                    message = error.localizedDescription
+                    return
+                }
+            }
+            let roots = request.needsFolderAccess ? VideoFiles.selection(from: request.roots) : request.roots
             let videos = await Task.detached(priority: .userInitiated) {
                 Self.collectVideos(roots)
             }.value
@@ -118,6 +163,18 @@ final class BatchStore {
             if selectedItemID == nil { selectedItemID = items.first?.id }
             if videos.isEmpty { message = String(localized: "No supported videos were found. Choose MOV, MP4, or M4V files.") }
         }
+    }
+
+    private static func presentImportFolder(_ directory: URL) -> URL? {
+        let panel = NSOpenPanel()
+        panel.message = String(localized: "Allow access to the folder that contains these videos. LogLift remembers read-only access for future imports.")
+        panel.prompt = String(localized: "Allow Folder")
+        panel.directoryURL = directory
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = false
+        panel.allowsMultipleSelection = false
+        panel.canCreateDirectories = false
+        return panel.runModal() == .OK ? panel.url : nil
     }
 
     @discardableResult
@@ -321,7 +378,6 @@ final class BatchStore {
 
     private nonisolated static func collectVideos(_ roots: [URL]) -> [URL] {
         var urls = [URL]()
-        let extensions: Set<String> = ["mov", "mp4", "m4v"]
         for root in roots {
             let isDirectory = (try? root.resourceValues(forKeys: [.isDirectoryKey]).isDirectory) == true
             if isDirectory, let enumerator = FileManager.default.enumerator(
@@ -331,9 +387,9 @@ final class BatchStore {
                 for case let url as URL in enumerator {
                     let values = try? url.resourceValues(forKeys: [.isRegularFileKey, .isSymbolicLinkKey])
                     if values?.isRegularFile == true, values?.isSymbolicLink != true,
-                       extensions.contains(url.pathExtension.lowercased()) { urls.append(url) }
+                       VideoFiles.extensions.contains(url.pathExtension.lowercased()) { urls.append(url) }
                 }
-            } else if extensions.contains(root.pathExtension.lowercased()) { urls.append(root) }
+            } else if VideoFiles.supports(root) { urls.append(root) }
         }
         return urls.sorted { $0.path.localizedStandardCompare($1.path) == .orderedAscending }
     }
