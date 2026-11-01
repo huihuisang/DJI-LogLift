@@ -1219,6 +1219,35 @@
         }
       }
     },
+    "Explore more apps at ajigu.com": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explore more apps at ajigu.com"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "前往 ajigu.com，发现更多 App"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ajigu.com でほかのアプリを見る"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ajigu.com에서 다른 앱 둘러보기"
+          }
+        }
+      }
+    },
     "Export": {
       "extractionState": "manual",
       "localizations": {
@@ -2752,6 +2781,35 @@
           "stringUnit": {
             "state": "translated",
             "value": "선명하게"
+          }
+        }
+      }
+    },
+    "We make other useful apps, too.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "We make other useful apps, too."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我们还做了一些好用的 App"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ほかにも便利なアプリを作っています"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다른 유용한 앱도 만들고 있어요"
           }
         }
       }

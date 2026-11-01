@@ -22,7 +22,7 @@ struct CameraGallery: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             VStack(alignment: .leading, spacing: 24) {
-                HStack(alignment: .bottom) {
+                HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Start with your camera.")
                             .font(.system(size: 42, weight: .semibold)).tracking(-1.4)
@@ -30,6 +30,7 @@ struct CameraGallery: View {
                             .font(.system(size: 15)).foregroundStyle(.secondary)
                     }
                     Spacer()
+                    AjiguPromotionLink()
                 }
                 HStack(spacing: 6) {
                     ForEach(CameraCategory.allCases) { item in

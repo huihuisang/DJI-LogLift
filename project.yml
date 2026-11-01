@@ -124,6 +124,7 @@ targets:
       - path: LogBatch/Views/QueuePane.swift
       - path: LogBatch/Views/CameraArtwork.swift
       - path: LogBatch/Views/CameraGallery.swift
+      - path: LogBatch/Views/AjiguPromotionLink.swift
       - path: LogBatch/Resources/Assets.xcassets
       - path: LogBatch/Resources/Localizable.xcstrings
     dependencies:

@@ -29,6 +29,8 @@ APP = {
     "Start with your camera.": ("从你的相机开始。", "まず、カメラを選ぼう。", "카메라부터 선택하세요."),
     "Choose a model. Its official LUT is already here.": ("选好机型，官方 LUT 已经就位。", "機種を選ぶだけ。公式 LUT は準備済みです。", "모델을 선택하세요. 공식 LUT가 준비되어 있습니다."),
     "Find your camera": ("查找相机", "カメラを検索", "카메라 찾기"),
+    "We make other useful apps, too.": ("我们还做了一些好用的 App", "ほかにも便利なアプリを作っています", "다른 유용한 앱도 만들고 있어요"),
+    "Explore more apps at ajigu.com": ("前往 ajigu.com，发现更多 App", "ajigu.com でほかのアプリを見る", "ajigu.com에서 다른 앱 둘러보기"),
     "Loading cameras…": ("正在加载相机…", "カメラを読み込み中…", "카메라 불러오는 중…"),
     "All processing stays on your Mac.": ("所有处理，都在你的 Mac。", "すべての処理を Mac の中で。", "모든 처리는 Mac 안에서 이루어집니다."),
     "Cameras": ("款相机", "機種", "개 카메라"),
