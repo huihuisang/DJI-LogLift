@@ -119,7 +119,7 @@ final class ExportLayoutTests: XCTestCase {
         let product = try XCTUnwrap(store.catalog?.products.first { $0.id == "nano" })
         let artwork = ProductArtworkLibrary()
         let resources = Bundle(for: Self.self).bundleURL.deletingLastPathComponent()
-            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/ProductImages")
+            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/PreparedProductImages")
         await artwork.prepare(resourceRoot: resources)
         for size in [NSSize(width: 1100, height: 760), NSSize(width: 1280, height: 900)] {
             let view = WorkspaceFixture(store: store, product: product, artwork: artwork)

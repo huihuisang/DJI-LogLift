@@ -96,9 +96,28 @@ for owner in (app / "Contents/Resources", framework):
             assert "LogBatch" not in strings, locale
 artwork_root = app / "Contents/Resources/ProductImages"
 artwork = json.loads((artwork_root / "manifest.json").read_text())
+source_artwork_root = project / "LogBatch/Resources/ProductImages"
+assert (artwork_root / "manifest.json").read_bytes() == (source_artwork_root / "manifest.json").read_bytes()
 assert {p["id"] for p in artwork["products"]} == {p["slug"] for package in catalog["packages"] for p in package["products"]}
 for product in artwork["products"]:
     assert hashlib.sha256((artwork_root / product["file"]).read_bytes()).hexdigest() == product["sha256"]
+    assert (artwork_root / product["file"]).read_bytes() == (source_artwork_root / product["file"]).read_bytes()
+prepared_root = app / "Contents/Resources/PreparedProductImages"
+prepared = json.loads((prepared_root / "manifest.json").read_text())
+assert prepared["processingVersion"] == 1
+assert prepared["sourceManifestSHA256"] == hashlib.sha256((artwork_root / "manifest.json").read_bytes()).hexdigest()
+assert {k: v for k, v in prepared.items() if k not in ("processingVersion", "sourceManifestSHA256", "products")} == {
+    k: v for k, v in artwork.items() if k != "products"
+}
+assert [{k: v for k, v in p.items() if k != "display"} for p in prepared["products"]] == artwork["products"]
+for product in prepared["products"]:
+    display = product["display"]
+    assert display["file"] == product["id"] + ".png"
+    png = (prepared_root / display["file"]).read_bytes()
+    assert hashlib.sha256(png).hexdigest() == display["sha256"], product["id"]
+    assert png[:8] == b"\x89PNG\r\n\x1a\n"
+    assert struct.unpack(">II", png[16:24]) == (display["width"], display["height"])
+    assert 0 < display["width"] <= 960 and 0 < display["height"] <= 960
 print(json.dumps({"appName": info["CFBundleDisplayName"], "executable": info["CFBundleExecutable"],
                   "bundleIdentifier": info["CFBundleIdentifier"],
                   "appIcon": {"name": info["CFBundleIconName"], "file": icon_path.name,
@@ -107,6 +126,7 @@ print(json.dumps({"appName": info["CFBundleDisplayName"], "executable": info["CF
                               "sha256": hashlib.sha256(icon_data).hexdigest()},
                   "bundledPackages": len(catalog["packages"]), "bundledCubes": len(luts),
                   "productImages": len(artwork["products"]),
+                  "preparedProductImages": len(prepared["products"]),
                   "finderExtension": extension_info["CFBundleIdentifier"],
                   "finderMenuIcon": menu_icon.name,
                   "localizedTargets": 3, "locales": ["en", "zh-Hans", "ja", "ko"]}, indent=2))

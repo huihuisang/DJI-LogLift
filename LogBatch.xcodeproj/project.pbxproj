@@ -108,6 +108,7 @@
 		F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11494922F875ACB51C0BDE98 /* ProductArtworkLibrary.swift */; };
 		F146CDC75864D7E3CB4D7AF6 /* ConversionWorkspace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7C5F5C4F0322B14A681943 /* ConversionWorkspace.swift */; };
 		F1C8CDFAC21075CADCBAB5EE /* CameraGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC31FDFDDD35884726F398 /* CameraGallery.swift */; };
+		F4E5109D446F525153E98DF7 /* ProductArtworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5925CADCAB877BF32A2939A6 /* ProductArtworkProcessor.swift */; };
 		F576973921F595B45D36CE59 /* ExportCompletionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C79FB00A8120190E908580E /* ExportCompletionTests.swift */; };
 		F61C730E1A019D98B2061FB0 /* StudioPreviewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7630594650D302D1FC1F35 /* StudioPreviewOptions.swift */; };
 		F7770AC1F7B4CA7CC1D939D8 /* PreviewPlaybackControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FD5002291AC095D450B68B /* PreviewPlaybackControls.swift */; };
@@ -200,6 +201,7 @@
 		501FC0C83544ECC07D9D2C4E /* ExportNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportNotifications.swift; sourceTree = "<group>"; };
 		525D49E2772A9FA1C56345D4 /* VideoSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoSource.swift; sourceTree = "<group>"; };
 		53FE5918A59A2785CECD0796 /* ImportAccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportAccessTests.swift; sourceTree = "<group>"; };
+		5925CADCAB877BF32A2939A6 /* ProductArtworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductArtworkProcessor.swift; sourceTree = "<group>"; };
 		5C62FB034D5030353257F2A0 /* LogBatchCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogBatchCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C9AF4B6178D25B44AFC6B64 /* LogLiftFinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LogLiftFinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD4B8FBFE806C05C8F95AE1 /* QueuePane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuePane.swift; sourceTree = "<group>"; };
@@ -317,6 +319,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		3D097B82CA6B478279F4451D /* script */ = {
+			isa = PBXGroup;
+			children = (
+				5925CADCAB877BF32A2939A6 /* ProductArtworkProcessor.swift */,
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
 		41C09FD967405426D3A8AEE8 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +371,7 @@
 				BA270F7F81D4B8ADDB662C6A /* Core */,
 				1DCBEC577B30335ED7E6A7BB /* FinderExtension */,
 				DB5C73A6FB0DF2348F66D24C /* LogBatch */,
+				3D097B82CA6B478279F4451D /* script */,
 				F7E47990F849B501501F3802 /* Shared */,
 				F6BE123DF4AF58E7D6FA7673 /* Tests */,
 				24FF35DB1C0B1CF8A86A88CA /* Frameworks */,
@@ -527,6 +538,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4954EE80645868D1004FA36 /* Build configuration list for PBXNativeTarget "LogBatch" */;
 			buildPhases = (
+				19D16F9F6F20E327BBDAC2BE /* Prepare product artwork */,
 				1EA0E746E4A49CD42E750C43 /* Sources */,
 				CADF2CEAA1653BC07A0236D6 /* Resources */,
 				3ABE1E532D460CC4C851E73A /* Frameworks */,
@@ -660,6 +672,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19D16F9F6F20E327BBDAC2BE /* Prepare product artwork */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/script/artwork-inputs.xcfilelist",
+			);
+			inputPaths = (
+				"$(SRCROOT)/script/ProductArtworkProcessor.swift",
+				"$(SRCROOT)/script/prepare_product_artwork.swift",
+				"$(SRCROOT)/script/artwork-outputs.xcfilelist",
+			);
+			name = "Prepare product artwork";
+			outputFileListPaths = (
+				"$(SRCROOT)/script/artwork-outputs.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nxcrun swiftc -O -module-cache-path \"$TEMP_DIR/ArtworkModuleCache\" \\\n  \"$SRCROOT/script/ProductArtworkProcessor.swift\" \\\n  \"$SRCROOT/script/prepare_product_artwork.swift\" \\\n  -o \"$TEMP_DIR/PrepareProductArtwork\"\n\"$TEMP_DIR/PrepareProductArtwork\" \\\n  \"$SRCROOT/LogBatch/Resources/ProductImages\" \\\n  \"$TEMP_DIR/PreparedProductImages\"\nOUTPUT_DIR=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/PreparedProductImages\"\nmkdir -p \"$OUTPUT_DIR\"\nwhile IFS= read -r file; do\n  case \"$file\" in\n    *.png|*/manifest.json) cp \"$TEMP_DIR/PreparedProductImages/$(basename \"$file\")\" \"$OUTPUT_DIR/\" ;;\n  esac\ndone < \"$SCRIPT_OUTPUT_FILE_LIST_0\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1EA0E746E4A49CD42E750C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -769,6 +807,7 @@
 				25439B1913683780078492F7 /* PreviewPlaybackControls.swift in Sources */,
 				409C346496E3E699A4F48B9F /* PreviewPlaybackTests.swift in Sources */,
 				F092F0B8CA53B00E4D0FE939 /* ProductArtworkLibrary.swift in Sources */,
+				F4E5109D446F525153E98DF7 /* ProductArtworkProcessor.swift in Sources */,
 				050179CFC2C6C8F4F9D0DA05 /* ProductArtworkTests.swift in Sources */,
 				33124DD7D11FBCA921EEA663 /* QueuePane.swift in Sources */,
 				5E8D23728579A4FAFC0FD3D4 /* SecurityScope.swift in Sources */,

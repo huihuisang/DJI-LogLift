@@ -22,7 +22,7 @@ final class AjiguPromotionTests: XCTestCase {
         let store = BatchStore()
         let artwork = ProductArtworkLibrary()
         let resources = Bundle(for: Self.self).bundleURL.deletingLastPathComponent()
-            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/ProductImages")
+            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/PreparedProductImages")
         await artwork.prepare(resourceRoot: resources)
         XCTAssertFalse(artwork.records.isEmpty)
 

@@ -7,9 +7,45 @@ import XCTest
 
 final class ProductArtworkTests: XCTestCase, @unchecked Sendable {
     @MainActor
+    func testArtworkPreparationTiming() async throws {
+        let root = Bundle(for: Self.self).bundleURL.deletingLastPathComponent()
+            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/PreparedProductImages")
+        var milliseconds = [Double]()
+        for _ in 0..<5 {
+            let library = ProductArtworkLibrary()
+            let start = ContinuousClock.now
+            await library.prepare(resourceRoot: root)
+            let elapsed = start.duration(to: .now).components
+            XCTAssertTrue(library.isReady, library.error ?? "")
+            milliseconds.append(Double(elapsed.seconds) * 1_000 + Double(elapsed.attoseconds) / 1e15)
+        }
+        print("ARTWORK_PREPARE_MS: \(milliseconds)")
+    }
+
+    @MainActor
+    func testStartupLoadsPreparedArtworkWithoutOriginalFiles() async throws {
+        let root = try fixtureRoot()
+        let bytes = try writeFixture(root)
+        let sourceHash = String(repeating: "0", count: 64)
+        let item: [String: Any] = [
+            "id": "fixture", "file": "missing-original.png", "sha256": sourceHash,
+            "hasAlpha": true, "representation": "product",
+            "display": ["file": "fixture.png", "sha256": checksum(bytes), "width": 8, "height": 6],
+        ]
+        let manifest: [String: Any] = ["processingVersion": 1, "products": [item]]
+        try JSONSerialization.data(withJSONObject: manifest).write(to: root.appendingPathComponent("manifest.json"))
+        let library = ProductArtworkLibrary()
+        await library.prepare(resourceRoot: root)
+        XCTAssertTrue(library.isReady, library.error ?? "")
+        XCTAssertTrue(try XCTUnwrap(library.images["fixture"]).isValid)
+        XCTAssertEqual(library.images["fixture"]?.size, NSSize(width: 8, height: 6))
+        XCTAssertEqual(library.records["fixture"]?.sha256, sourceHash)
+    }
+
+    @MainActor
     func testEveryBundledCameraHasDecodableArtwork() async throws {
         let root = Bundle(for: Self.self).bundleURL.deletingLastPathComponent()
-            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/ProductImages")
+            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/PreparedProductImages")
         let library = ProductArtworkLibrary()
         await library.prepare(resourceRoot: root)
         XCTAssertTrue(library.isReady, library.error ?? "")
@@ -23,7 +59,7 @@ final class ProductArtworkTests: XCTestCase, @unchecked Sendable {
     @MainActor
     func testPinnedWhiteBackgroundCamerasHaveTransparentDisplayCorners() async throws {
         let root = Bundle(for: Self.self).bundleURL.deletingLastPathComponent()
-            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/ProductImages")
+            .appendingPathComponent("LogLift for DJI.app/Contents/Resources/PreparedProductImages")
         let library = ProductArtworkLibrary()
         await library.prepare(resourceRoot: root)
         XCTAssertTrue(library.isReady)
@@ -50,8 +86,10 @@ final class ProductArtworkTests: XCTestCase, @unchecked Sendable {
         let root = try fixtureRoot()
         let bytes = try writeFixture(root)
         try writeManifest(root, hash: checksum(bytes))
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
         let library = ProductArtworkLibrary()
-        await library.prepare(resourceRoot: root)
+        await library.prepare(resourceRoot: preparedRoot)
         XCTAssertTrue(library.isReady)
         let image = try XCTUnwrap(library.images["fixture"])
         // NSImage can synthesize retina representations; check the logical content bounds.
@@ -65,8 +103,10 @@ final class ProductArtworkTests: XCTestCase, @unchecked Sendable {
         let root = try fixtureRoot()
         let bytes = try writeWhiteBackgroundFixture(root)
         try writeManifest(root, hash: checksum(bytes), hasAlpha: false, displayBackground: "white")
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
         let library = ProductArtworkLibrary()
-        await library.prepare(resourceRoot: root)
+        await library.prepare(resourceRoot: preparedRoot)
         XCTAssertTrue(library.isReady)
         let image = try XCTUnwrap(library.images["fixture"])
         XCTAssertEqual(image.size, NSSize(width: 4, height: 4))
@@ -91,29 +131,130 @@ final class ProductArtworkTests: XCTestCase, @unchecked Sendable {
         let root = try fixtureRoot()
         let bytes = try writeWhiteBackgroundFixture(root)
         try writeManifest(root, hash: checksum(bytes), hasAlpha: false)
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
         let library = ProductArtworkLibrary()
-        await library.prepare(resourceRoot: root)
+        await library.prepare(resourceRoot: preparedRoot)
         XCTAssertTrue(library.isReady)
         XCTAssertEqual(library.images["fixture"]?.size, NSSize(width: 8, height: 6))
         XCTAssertEqual(try Data(contentsOf: root.appendingPathComponent("fixture.png")), bytes)
     }
 
-    @MainActor
-    func testCorruptAndDuplicateManifestEntriesFailWithoutPartialArtwork() async throws {
+    func testCorruptAndDuplicateSourcesStopTheBuildProcessor() throws {
         let root = try fixtureRoot()
         let bytes = try writeFixture(root)
         try writeManifest(root, hash: String(repeating: "0", count: 64))
-        let corrupt = ProductArtworkLibrary()
-        await corrupt.prepare(resourceRoot: root)
-        XCTAssertFalse(corrupt.isReady)
-        XCTAssertNotNil(corrupt.error)
-        XCTAssertTrue(corrupt.images.isEmpty)
+        let preparedRoot = root.appendingPathComponent("prepared")
+        XCTAssertThrowsError(try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot))
+        XCTAssertFalse(FileManager.default.fileExists(atPath: preparedRoot.appendingPathComponent("manifest.json").path))
         try writeManifest(root, hash: checksum(bytes), duplicate: true)
-        let duplicate = ProductArtworkLibrary()
-        await duplicate.prepare(resourceRoot: root)
-        XCTAssertFalse(duplicate.isReady)
-        XCTAssertNotNil(duplicate.error)
-        XCTAssertTrue(duplicate.images.isEmpty)
+        XCTAssertThrowsError(try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot))
+        XCTAssertFalse(FileManager.default.fileExists(atPath: preparedRoot.appendingPathComponent("manifest.json").path))
+    }
+
+    func testProcessorCannotOverwriteTheSourceDirectory() throws {
+        let root = try fixtureRoot()
+        let bytes = try writeFixture(root)
+        try writeManifest(root, hash: checksum(bytes))
+        let manifest = try Data(contentsOf: root.appendingPathComponent("manifest.json"))
+        XCTAssertThrowsError(try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: root))
+        XCTAssertEqual(try Data(contentsOf: root.appendingPathComponent("fixture.png")), bytes)
+        XCTAssertEqual(try Data(contentsOf: root.appendingPathComponent("manifest.json")), manifest)
+    }
+
+    func testProcessorRejectsUndecodableBytesWithAValidChecksum() throws {
+        let root = try fixtureRoot()
+        let bytes = Data("Invalid image".utf8)
+        try bytes.write(to: root.appendingPathComponent("fixture.png"))
+        try writeManifest(root, hash: checksum(bytes))
+        let preparedRoot = root.appendingPathComponent("prepared")
+        XCTAssertThrowsError(try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot))
+        XCTAssertFalse(FileManager.default.fileExists(atPath: preparedRoot.appendingPathComponent("manifest.json").path))
+    }
+
+    func testProcessorLimitsDisplayResolutionAndRecordsBothChecksums() throws {
+        let root = try fixtureRoot()
+        let context = try XCTUnwrap(CGContext(data: nil, width: 1920, height: 1200, bitsPerComponent: 8,
+                                             bytesPerRow: 1920 * 4, space: CGColorSpaceCreateDeviceRGB(),
+                                             bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue))
+        context.setFillColor(CGColor(red: 1, green: 0, blue: 0, alpha: 1))
+        context.fill(CGRect(x: 0, y: 0, width: 1920, height: 1200))
+        let bitmap = NSBitmapImageRep(cgImage: try XCTUnwrap(context.makeImage()))
+        let bytes = try XCTUnwrap(bitmap.representation(using: .png, properties: [:]))
+        try bytes.write(to: root.appendingPathComponent("fixture.png"))
+        try writeManifest(root, hash: checksum(bytes), hasAlpha: false)
+        let manifest = try Data(contentsOf: root.appendingPathComponent("manifest.json"))
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
+        let data = try Data(contentsOf: preparedRoot.appendingPathComponent("manifest.json"))
+        let generated = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
+        let products = try XCTUnwrap(generated["products"] as? [[String: Any]])
+        let record = try XCTUnwrap(products.first)
+        let display = try XCTUnwrap(record["display"] as? [String: Any])
+        XCTAssertEqual(generated["sourceManifestSHA256"] as? String, checksum(manifest))
+        XCTAssertEqual(record["sha256"] as? String, checksum(bytes))
+        XCTAssertEqual(display["sha256"] as? String, checksum(try Data(contentsOf: preparedRoot.appendingPathComponent("fixture.png"))))
+        XCTAssertEqual(display["width"] as? Int, 960)
+        XCTAssertEqual(display["height"] as? Int, 600)
+        XCTAssertEqual(try Data(contentsOf: root.appendingPathComponent("fixture.png")), bytes)
+        XCTAssertEqual(try Data(contentsOf: root.appendingPathComponent("manifest.json")), manifest)
+    }
+
+    @MainActor
+    func testMissingPreparedFileFailsWithoutPartialArtworkAndCanRetry() async throws {
+        let root = try fixtureRoot()
+        let bytes = try writeFixture(root)
+        try writeManifest(root, hash: checksum(bytes))
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
+        let png = preparedRoot.appendingPathComponent("fixture.png")
+        let preparedBytes = try Data(contentsOf: png)
+        try FileManager.default.removeItem(at: png)
+        let library = ProductArtworkLibrary()
+        await library.prepare(resourceRoot: preparedRoot)
+        XCTAssertFalse(library.isReady)
+        XCTAssertFalse(library.isPreparing)
+        XCTAssertNotNil(library.error)
+        XCTAssertTrue(library.images.isEmpty)
+        XCTAssertTrue(library.records.isEmpty)
+        try preparedBytes.write(to: png)
+        await library.prepare(resourceRoot: preparedRoot)
+        XCTAssertTrue(library.isReady)
+        XCTAssertNil(library.error)
+    }
+
+    @MainActor
+    func testUnsupportedOrDuplicatePreparedManifestFailsWithoutPartialArtwork() async throws {
+        let root = try fixtureRoot()
+        let bytes = try writeFixture(root)
+        try writeManifest(root, hash: checksum(bytes))
+        let preparedRoot = root.appendingPathComponent("prepared")
+        try ProductArtworkProcessor.prepare(sourceRoot: root, outputRoot: preparedRoot)
+        let url = preparedRoot.appendingPathComponent("manifest.json")
+        let data = try Data(contentsOf: url)
+        let original = try XCTUnwrap(JSONSerialization.jsonObject(with: data) as? [String: Any])
+        let products = try XCTUnwrap(original["products"] as? [[String: Any]])
+        for key in ["version", "duplicate", "path", "size"] {
+            var manifest = original
+            switch key {
+            case "version": manifest["processingVersion"] = 2
+            case "duplicate": manifest["products"] = products + products
+            default:
+                var product = try XCTUnwrap(products.first)
+                var display = try XCTUnwrap(product["display"] as? [String: Any])
+                if key == "path" { display["file"] = "../fixture.png" }
+                if key == "size" { display["width"] = 0 }
+                product["display"] = display
+                manifest["products"] = [product]
+            }
+            try JSONSerialization.data(withJSONObject: manifest).write(to: url)
+            let library = ProductArtworkLibrary()
+            await library.prepare(resourceRoot: preparedRoot)
+            XCTAssertFalse(library.isReady, key)
+            XCTAssertNotNil(library.error, key)
+            XCTAssertTrue(library.images.isEmpty, key)
+            XCTAssertTrue(library.records.isEmpty, key)
+        }
     }
 
     func testCameraCategoriesCoverEveryProductExactlyOnce() throws {

@@ -78,6 +78,7 @@ The pinned 2026-10-30 snapshot contains 44 LUT packages, 64 CUBE files, and 36 p
 - `LogBatch/Resources/DJI/catalog.json`: runtime LUT catalog and provenance.
 - `LogBatch/Resources/DJI/LUTs/`: original CUBE files.
 - `LogBatch/Resources/ProductImages/`: official photos and their manifest.
+- Xcode generates `PreparedProductImages/` in the app bundle at build time. It checks the original photo hashes, then resizes and trims display copies. The generated manifest retains provenance and records both source and display hashes. Startup loads these prepared PNGs without image processing; the original photos and manifest remain unchanged.
 - `vendor/dji/`: source-index snapshot, original ZIP archives, and provenance notice.
 
 **The DJI resources are excluded from the project license. Permission to redistribute them has not been verified.** Their presence in this public repository does not establish a redistribution license. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [vendor/dji/NOTICE.md](vendor/dji/NOTICE.md) before reuse or distribution.

@@ -8,6 +8,7 @@ The following materials are excluded from both the current project license and t
 
 - Official DJI CUBE files in `LogBatch/Resources/DJI/LUTs/`.
 - Official DJI product photos in `LogBatch/Resources/ProductImages/`.
+- Display copies of those photos generated into `PreparedProductImages/` during a build.
 - Original DJI download archives in `vendor/dji/archives/`.
 - DJI trademarks, product names, and other protected third-party material.
 

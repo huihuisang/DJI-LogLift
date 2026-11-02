@@ -6,6 +6,7 @@ cd "$ROOT_DIR"
 DERIVED_DATA="${LOGBATCH_DERIVED_DATA:-$HOME/Library/Caches/LogBatch/DerivedData}"
 FIXTURE_DIR="$(mktemp -d "$TASK_ARTIFACT_DIR/verification-XXXXXX")"
 python3 -m unittest discover -s Tests -p 'test_*.py'
+python3 script/generate_artwork_filelists.py --check
 python3 script/sync_dji_luts.py
 python3 script/sync_product_images.py
 python3 script/prepare_fixtures.py "$FIXTURE_DIR"

@@ -1,5 +1,6 @@
 name: LogBatch
 options:
+  preGenCommand: python3 script/generate_artwork_filelists.py
   deploymentTarget:
     macOS: '14.0'
   developmentLanguage: en
@@ -28,6 +29,32 @@ targets:
   LogBatch:
     type: application
     platform: macOS
+    preBuildScripts:
+      - name: Prepare product artwork
+        script: |
+          set -eu
+          xcrun swiftc -O -module-cache-path "$TEMP_DIR/ArtworkModuleCache" \
+            "$SRCROOT/script/ProductArtworkProcessor.swift" \
+            "$SRCROOT/script/prepare_product_artwork.swift" \
+            -o "$TEMP_DIR/PrepareProductArtwork"
+          "$TEMP_DIR/PrepareProductArtwork" \
+            "$SRCROOT/LogBatch/Resources/ProductImages" \
+            "$TEMP_DIR/PreparedProductImages"
+          OUTPUT_DIR="$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/PreparedProductImages"
+          mkdir -p "$OUTPUT_DIR"
+          while IFS= read -r file; do
+            case "$file" in
+              *.png|*/manifest.json) cp "$TEMP_DIR/PreparedProductImages/$(basename "$file")" "$OUTPUT_DIR/" ;;
+            esac
+          done < "$SCRIPT_OUTPUT_FILE_LIST_0"
+        inputFiles:
+          - $(SRCROOT)/script/ProductArtworkProcessor.swift
+          - $(SRCROOT)/script/prepare_product_artwork.swift
+          - $(SRCROOT)/script/artwork-outputs.xcfilelist
+        inputFileLists:
+          - $(SRCROOT)/script/artwork-inputs.xcfilelist
+        outputFileLists:
+          - $(SRCROOT)/script/artwork-outputs.xcfilelist
     sources:
       - path: Shared
       - path: LogBatch
@@ -98,6 +125,7 @@ targets:
     sources:
       - path: Tests
         excludes: [__pycache__, '*.py', '*.pyc']
+      - path: script/ProductArtworkProcessor.swift
       - path: Shared
       - path: FinderExtension/FinderSync.swift
       - path: FinderExtension/FinderMenuIcon.swift
