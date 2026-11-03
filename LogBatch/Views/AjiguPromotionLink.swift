@@ -9,7 +9,7 @@ struct AjiguPromotionLink: View {
 
     var body: some View {
         Link(destination: URL(string: "https://ajigu.com/")!) {
-            HStack(alignment: .top, spacing: 12) {
+            HStack(alignment: .center, spacing: 12) {
                 Image("AjiguMascot", bundle: resourceBundle)
                     .renderingMode(.original)
                     .resizable()
@@ -22,15 +22,11 @@ struct AjiguPromotionLink: View {
                     Text("We make other useful apps, too.", bundle: resourceBundle)
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
-                    Text(verbatim: "ajigu.com")
-                        .font(.system(size: 11))
-                        .foregroundStyle(.secondary)
                 }
                 Image(systemName: "arrow.right.circle")
                     .font(.system(size: 24, weight: .light))
                     .foregroundStyle(StudioPalette.accent)
                     .padding(.leading, 8)
-                    .padding(.top, 4)
                     .offset(x: hovered && !reduceMotion ? 2 : 0)
             }
             .padding(8)
