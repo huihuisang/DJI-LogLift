@@ -9,6 +9,7 @@ APP = {
     "Allow Folder": ("允许访问文件夹", "フォルダを許可", "폴더 허용"),
     "The selected folder does not contain the requested videos.": ("所选文件夹不包含待导入的视频。", "選択したフォルダに読み込む動画がありません。", "선택한 폴더에 가져올 동영상이 없습니다."),
     "The Finder import request is invalid. Try again from Finder.": ("Finder 导入请求无效，请从 Finder 重试。", "Finder の読み込み要求が無効です。Finder からやり直してください。", "Finder 가져오기 요청이 잘못되었습니다. Finder에서 다시 시도하세요."),
+    "Privacy Policy…": ("隐私政策…", "プライバシーポリシー…", "개인정보 처리방침…"),
     "Finder Extension…": ("Finder 扩展…", "Finder 拡張機能…", "Finder 확장 프로그램…"),
     "The export folder could not be saved. Choose another folder.": ("无法保存导出目录，请选择其他文件夹。", "書き出し先を保存できません。別のフォルダを選択してください。", "내보내기 폴더를 저장할 수 없습니다. 다른 폴더를 선택하세요."),
     "Play": ("播放", "再生", "재생"),

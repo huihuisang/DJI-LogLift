@@ -24,6 +24,7 @@ assert info["CFBundleURLTypes"] == [{
 extension = app / "Contents/PlugIns/LogLiftFinderExtension.appex"
 extension_info = plistlib.loads((extension / "Contents/Info.plist").read_bytes())
 assert extension_info["CFBundleIdentifier"] == "dev.logbatch.app.FinderExtension", extension_info
+assert extension_info["LSUIElement"] is True, extension_info
 assert extension_info["CFBundleVersion"] == info["CFBundleVersion"], extension_info
 assert extension_info["CFBundleShortVersionString"] == info["CFBundleShortVersionString"], extension_info
 assert extension_info["NSExtension"] == {

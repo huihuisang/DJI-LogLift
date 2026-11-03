@@ -2118,6 +2118,35 @@
         }
       }
     },
+    "Privacy Policy…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privacy Policy…"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隐私政策…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プライバシーポリシー…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인정보 처리방침…"
+          }
+        }
+      }
+    },
     "Product images could not be loaded. Please rebuild the app.": {
       "extractionState": "manual",
       "localizations": {

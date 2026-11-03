@@ -16,6 +16,7 @@ struct LogBatchApp: App {
         .windowStyle(.hiddenTitleBar)
         .commands {
             CommandGroup(after: .appSettings) {
+                Link("Privacy Policy…", destination: URL(string: "https://github.com/huihuisang/DJI-LogLift/blob/master/docs/PRIVACY.md")!)
                 Button("Finder Extension…") { FIFinderSyncController.showExtensionManagementInterface() }
             }
         }
